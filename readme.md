@@ -9,8 +9,8 @@ Share frontend development assets so projects can be built and iterated on faste
 # Client
 
 ```
-  git clone https://github.com/stackmates/stackmates
-  cd stackmates/client      
+  git clone https://github.com/stackmates/common.client.build client
+  cd client      
   npm  i                // make and drink coffee then come back (takes around 25mins)
   bower i               // choose first option
 ```
