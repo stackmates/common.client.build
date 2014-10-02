@@ -1,0 +1,32 @@
+
+
+.Accordion {
+
+}
+
+.Accordion-group {
+  background: var(--accordion-bgColor);
+  color: var(--accordion-color);
+  display: block;
+  padding: var(--accordion-padding);
+  overflow: hidden;
+}
+
+.Accordion-heading {
+
+}
+
+.Accordion-toggle {
+  color: var(--accordion-toggleColor);
+  &:hover {
+    color: var(--accordion-toggleColorHover);
+  }
+}
+
+.Accordion-body {
+
+}
+
+.Accordion-inner {
+
+}

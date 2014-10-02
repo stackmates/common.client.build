@@ -1,0 +1,6 @@
+{
+  "name" : "common.components.quarks.collapse",
+  "main" : "collapse_component",
+  "style" : "style/collapse.css"
+
+}

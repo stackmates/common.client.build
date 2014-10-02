@@ -1,0 +1,40 @@
+/*
+ * Z-Index Scale (private vars)
+ * --------------------------------------------------
+ * Allows us to at a glance determine relative layers of our application and
+ * prevents bugs arrising from arbitrary z-index values. Do not edit the z-index
+ * scale! Only add application scoped z-index values.
+ *
+ */
+
+.u-z1 {
+  z-index: var(--zIndex-1);
+}
+.u-z2 {
+  z-index: var(--zIndex-2);
+}
+.u-z3 {
+  z-index: var(--zIndex-3);
+}
+.u-z4 {
+  z-index: var(--zIndex-4);
+}
+.u-z5 {
+  z-index: var(--zIndex-5);
+}
+.u-z6 {
+  z-index: var(--zIndex-6);
+}
+.u-z7 {
+  z-index: var(--zIndex-7);
+}
+.u-z8 {
+  z-index: var(--zIndex-8);
+}
+.u-z9 {
+  z-index: var(--zIndex-9);
+}
+.u-z10 {
+  z-index: var(--zIndex-10);
+}
+

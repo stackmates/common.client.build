@@ -1,0 +1,63 @@
+/*TODO make this nice*/
+
+
+
+.SiteNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--topbar-HEIGHT);
+  padding-top: 0px;
+  background:   var(--color-nav-header);
+  color: var(--text-color);
+  z-index: var(--z-site-nav);
+  overflow: hidden;
+  backface-visibility: hidden;
+  transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+}
+
+
+
+.SiteNav .bd-logo-svg {
+  fill: var(--TopBar-color-logo);
+}
+
+._SiteNav__returnlink {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.SiteNav__bar {
+  z-index: var(--z-site-nav__bar);
+  margin-top: 0px;
+  width: 100%;
+  height: 80px;
+  background: none;
+  transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+}
+
+.SiteNav__a {
+  color: #fff;
+  display: block;
+  height: 80px;
+}
+._SiteNav__logo {
+  width: 90px;
+  height: 80px;
+  padding: 15px 15px 0px 30px;
+  z-index: var(--z-site-nav);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+}
+
+._SiteNav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}

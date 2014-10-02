@@ -1,0 +1,5 @@
+{
+  "name" : "common.directives.alert",
+  "main" : "alert",
+  "style" : "style/alert.css"
+}

@@ -1,0 +1,10 @@
+
+.NavList {
+  list-style-type: none;
+}
+
+.NavList li {
+  margin-left: 0;
+  padding-left: 0;
+  padding: 0.4em 0;
+}

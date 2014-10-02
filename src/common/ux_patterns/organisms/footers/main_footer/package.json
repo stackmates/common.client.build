@@ -1,0 +1,20 @@
+{
+  "name": "zk organism main footer",
+  "version": "0.0.1",
+  "description": "ZK organism main footer",
+  "main": "index.html",
+  "style": "styles/main_footer.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dreamineering/zk-o-main-footer.git"
+  },
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "molecule",
+    "main footer"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

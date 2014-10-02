@@ -1,0 +1,25 @@
+
+.icon {
+  font-size: 1.4em;
+}
+.i-size {
+  vertical-align: middle !important;
+}
+
+.i-size-12 { font-size: 12px; }
+.i-size-14 { font-size: 14px; }
+.i-size-16 { font-size: 16px; }
+.i-size-18 { font-size: 18px; }
+.i-size-21 { font-size: 21px; }
+.i-size-24 { font-size: 24px; }
+.i-size-32 { font-size: 32px; }
+
+.i-size-48 {
+  font-size: 48px;
+}
+
+
+.i-size-64 { font-size: 64px; }
+.i-size-96 { font-size: 96px; }
+
+

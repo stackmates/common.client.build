@@ -1,0 +1,20 @@
+{
+  "name": "timeline.css",
+  "version": "0.0.1",
+  "description": "project timeline inspired by Brad Frost",
+  "main": "index.html",
+  "style": "timeline.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dreamineering/timeline.css.git"
+  },
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "molecule",
+    "main nav"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

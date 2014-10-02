@@ -1,0 +1,15 @@
+{
+  "name": "sm_scroll_smooth",
+  "private": "true",
+  "version": "0.0.1",
+  "description": "stackmates scroll smooth",
+  "main": "sm_scroll_smooth.js",
+  "keywords": [
+    "css",
+    "touch check",
+    "browserify"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

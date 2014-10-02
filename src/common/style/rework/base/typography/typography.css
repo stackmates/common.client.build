@@ -1,0 +1,181 @@
+
+
+header[role=banner], .header {
+  font-size: 1rem;
+}
+footer[role=contentinfo], .footer {
+  font-size: 0.777rem;
+}
+.sidebar {
+  font-size: 0.888rem;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title-font-family);
+  margin-top: 1em;
+  margin-bottom: 0.667em;
+  line-height: 1.2;
+/*  text-align: center;*/
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 2.2em;
+  font-weight: light;
+}
+h2 {
+  font-size: 1.8em;
+  line-height: 1.4;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.3em;
+}
+h5 {
+  font-size: 1.1em;
+}
+h6 {
+  font-size: 0.8em;
+  line-height: 1.2;
+}
+
+@media purse {
+  h1 {
+    font-size: 2.4em;
+    line-height: 1.3;
+    /*margin-bottom: 1.1em;*/
+  }
+  h2 {
+    font-size: 2.0em;
+    line-height: 1.3;
+  }
+  h3 {
+    font-size: 1.7em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+  h5 {
+    font-size: 1.3em;
+  }
+  h6 {
+    font-size: 0.8em;
+  }
+}
+
+@media sofa {
+  h1 {
+    font-size: 2.6em;
+    /*margin-bottom: 1.6em;*/
+  }
+  h2 {
+    font-size: 2.2em;
+  }
+  h3 {
+    font-size: 1.9em;
+  }
+  h4 {
+    font-size: 1.7em;
+  }
+  h5 {
+    font-size: 1.5em;
+  }
+  h6 {
+    font-size: 0.8em;
+  }
+}
+
+@media office {
+  h1 {
+    font-size: 2.8em;
+    /*margin-bottom: 1.6em;*/
+  }
+  h2 {
+    font-size: 2.4em;
+  }
+  h3 {
+    font-size: 2.1em;
+  }
+  h4 {
+    font-size: 1.9em;
+  }
+  h5 {
+    font-size: 1.7em;
+  }
+  h6 {
+    font-size: 0.8em;
+  }
+}
+
+
+h3 span, h2 span {
+  font-size: 0.75em;
+}
+
+
+.t-BannerHeading {
+  font-size: var(--t-BannerHeadingPocket);
+  margin: 0 auto;
+  line-height: 0.9;
+  padding-bottom: 1em;
+  padding-top: 0.6em;
+}
+@media purse {
+  .t-BannerHeading {
+    font-size: var(--t-BannerHeadingPurse);
+    /*margin-bottom: 45px;*/
+  }
+}
+@media sofa-and-up {
+  .t-BannerHeading {
+    font-size: var(--t-BannerHeadingSofaAndUp);
+    /*margin-bottom: 45px;*/
+  }
+}
+@media office {
+  .t-BannerHeading {
+    font-size: var(--t-BannerHeadingOffice);
+    /*margin-bottom: 45px;*/
+  }
+}
+.t-BannerHeading span {
+  font-size: 0.48em;
+  line-height: 3.2;
+}
+
+
+.t-important {
+  font-size: 36px;
+  line-height: 1.2;
+  padding: 1em 0 1.2em;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+@media purse-and-up {
+  .t-important {
+    font-size: 50px;
+/*    line-height: 67px;*/
+    padding: 0.8em 0 1em;
+  }
+}
+@media sofa-and-up {
+  .t-important {
+    font-size: 60px;
+/*    line-height: 67px;*/
+    padding: 0.8em 0 1em;
+  }
+}
+@media office {
+  .t-important {
+    font-size: 80px;
+/*    line-height: 98px;*/
+    padding: 0.8em 0 1em;
+  }
+}
+
+
+
+

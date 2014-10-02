@@ -1,0 +1,13 @@
+{
+  "name": "drmg.parallax",
+  "version": "0.0.1",
+  "description": "pure css parallax",
+  "style": "parallax.css",
+  "keywords": [
+    "css",
+    "parallax"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

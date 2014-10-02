@@ -1,0 +1,12 @@
+<div class="Accordion-group">
+
+  <div class="Accordion-heading" >
+    <a class="Accordion-toggle" ng-click="isOpen = !isOpen" accordion-transclude="heading">{{heading}}</a>
+  </div>
+
+  <div class="Accordion-body" collapse="!isOpen">
+
+    <div class="Accordion-inner" ng-transclude></div>
+
+  </div>
+</div>

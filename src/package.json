@@ -1,0 +1,74 @@
+{
+  "name": "stackmates-engine-common",
+  "version": "0.0.2",
+  "description": "A starter for putting out the vibe",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stackmates/stackmates.git"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "metalsmith",
+    "browserify",
+    "gulp"
+  ],
+  "author": "matt mischewski",
+  "license": "MIT",
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "angular": {
+      "exports": "angular"
+    },
+    "ionic": {
+      "exports": "ionic"
+    },
+    "plugin": {
+      "exports": "plugin",
+      "depends": [
+        "jquery:$"
+      ]
+    }
+  },
+  "browser": {
+    "ionic": "./node_modules/bower_components/ionic/js/ionic.js",
+    "ionic-angular": "./node_modules/bower_components/ionic/js/ionic-angular.js",
+    "angular": "./node_modules/bower_components/angular/angular.js",
+    "angular-animate": "./node_modules/bower_components/angular-animate/angular-animate.js",
+    "angular-cookies": "./node_modules/bower_components/angular-cookies/angular-cookies.js",
+    "angular-sanitize": "./node_modules/bower_components/angular-sanitize/angular-sanitize.js",
+    "angular-messages": "./node_modules/bower_components/angular-messages/angular-messages.js",
+    "angular-touch": "./node_modules/bower_components/angular-touch/angular-touch.js",
+    "angular-translate": "./node_modules/bower_components/angular-translate/angular-translate.js",
+    "angular-ui-bootstrap": "./node_modules/bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
+    "responsive-nav": "./node_modules/bower_components/responsive-nav/responsive-nav.js",
+    "picturefill": "./node_modules/bower_components/picturefill/dist/picturefill.js",
+    "plugin": "./src/js/vendor/jquery-plugin.js"
+  },
+  "dependencies": {
+    "angular-form-for": "^1.2.16",
+    "angular-ui-router": "^0.2.10",
+    "baconjs": "~0.7.6",
+    "center": "git://github.com/npm-dom/center",
+    "component-transitionend-property": "git://github.com/npmcomponent/component-transitionend-property",
+    "d3": "^3.4.11",
+    "debug": "^2.0.0",
+    "domquery": "^1.2.0",
+    "fastclick": "~1.0.0",
+    "jquery": "^2.1.1",
+    "leaflet": "~0.7.3",
+    "lodash": "~2.4.1",
+    "masonry.js": "~3.1.5",
+    "moment": "~2.5.1",
+    "parallaxify": "^0.1.1",
+    "querystring": "^0.2.0",
+    "restangular": "^1.4.0",
+    "rome": "^1.0.2"
+  },
+  "devDependencies": {}
+}

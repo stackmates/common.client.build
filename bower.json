@@ -1,0 +1,24 @@
+{
+  "name": "drmg.frontend.builder",
+  "private": true,
+  "dependencies": {
+    "angular": "1.2.12",
+    "angular-animate": "1.2.12",
+    "angular-cookies": "1.2.12",
+    "angular-sanitize": "1.2.12",
+    "angular-bootstrap": "~0.11.0",
+    "angular-mocks": "1.2.12",
+    "es5-shim": "2.1.0",
+    "angular-touch": "1.2.12",
+    "angular-messages": "latest",
+    "picturefill": "~2.1.0",
+    "imagesloaded": "~3.1.8",
+    "responsive-nav": "~1.0.32",
+    "angular-debaser": "~0.3.1",
+    "ionic": "driftyco/ionic-bower#1.0.0-beta.5",
+    "angular-translate": "~2.2.0",
+    "angular-scroll-watch": "~0.5.2",
+    "headroom.js": "~0.7.0",
+    "angular-leaflet-directive": "~0.7.8"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "zk-atoms-button",
+  "version": "0.0.1",
+  "description": "ZK Atoms Button",
+  "main": "index.html",
+  "style": "button.css",
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "bem",
+    "button"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

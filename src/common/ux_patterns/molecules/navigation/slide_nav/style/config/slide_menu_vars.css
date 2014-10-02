@@ -1,0 +1,7 @@
+
+:root {
+  --SlideMenu-width:      300px;
+  --SlideMenu-negWidth:   -300px;
+  --SlideMenu-height:     100px;
+  --SlideMenu-negHeight:  -100px;
+}

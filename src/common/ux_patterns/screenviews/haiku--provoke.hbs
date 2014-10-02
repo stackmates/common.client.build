@@ -1,0 +1,31 @@
+{{> _html}}
+
+<div class='__page-container'>
+
+  {{> m_TopBar--overlay }}
+  {{> m_SiteNav--overlay }}
+
+
+  {{#selectCollection this.collections  this.metaCardsCollection }}
+
+    {{#if this.bannerHeading }}
+      {{> m_Header--loop }}
+    {{/if}}
+
+    <div class='__content-container'>
+      <div class='__content content' role='main'>
+        <div class='u-cf'>
+
+          {{> o_Card--provoke }}
+
+        </div>
+      </div>
+    </div>
+
+  {{/selectCollection }}
+
+  {{> o_Footer }}
+
+</div>
+
+{{> _close}}

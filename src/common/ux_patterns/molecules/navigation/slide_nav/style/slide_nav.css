@@ -1,0 +1,158 @@
+
+/*
+ * Dependencies
+ *
+ * slide_menu_layout
+ *
+ * References
+ * http://apeatling.com/2014/building-smooth-sliding-mobile-menu/
+ *
+ */
+
+body.is-siteNavOpen .SlideNav-scrollableContainer {
+  transform: none;
+  filter: alpha(opacity=100);
+  opacity: 1
+}
+
+body.is-transitioningSlideNav .SlideNav-scrollableContainer {
+  display: block;
+  width: 280px
+}
+
+.SlideNav-scrollableContainer {
+  display: none;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%
+}
+
+.SlideNav-scrollableContainer {
+  transform: translateX(-20px);
+  transition: transform 200ms, opacity 200ms;
+  filter: alpha(opacity=66);
+  opacity: .66
+}
+
+.siteNav-scrollableContainer::-webkit-scrollbar {
+  display: none
+}
+
+
+body.is-transitioningSlideNav .canvas-renderer {
+  position: absolute
+}
+
+
+body.is-transitioningSlideNav .SlideNav-logo {
+  transition: none
+}
+
+
+body.is-slideNavOpen .SlideNav-overlay,.SlideNav:focus~.SlideNav-overlay {
+  left: 280px;
+  z-index: 900
+}
+
+body.is-slideNavOpen .SlideNav-overlay {
+  display: block
+}
+.SlideNav-overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 600;
+}
+
+
+.SlideNavList {
+
+}
+
+.SlideNavList-button {
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  font-style: normal;
+  display: block;
+  padding: 0 16px 0 52px;
+  height: 48px;
+  line-height: 46px;
+  font-size: 16px;
+  border: 0;
+  background: rgba(0,0,0,0);
+  text-align: left
+}
+
+.SlideNavList-button {
+  color: rgba(255,255,255,0.65)
+}
+
+.SlideNavList-button:focus {
+  outline: 0
+}
+
+/*.SlideNavList-button .icon {
+  font-size: 20px;
+  display: block;
+  position: absolute;
+  left: 18px;
+  top: -1px;
+  width: 20px;
+  text-align: center
+}*/
+
+/*.SlideNavList-button .icon--logoM {
+  font-size: 18px;
+  top: 0
+}
+*/
+/*.SlideNavList-button .icon--stats {
+  top: 0
+}
+*/
+/*.SlideNavList-button .avatar {
+  position: absolute;
+  left: 16px;
+  top: 10px
+}
+
+.SlideNavList-button--secondary {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0 16px 0 6px
+}
+*/
+/*.SlideNavList-button--secondary .icon,.SlideNavList-button--secondary .icon--search:before {
+  line-height: 48px;
+  font-size: 20px
+}*/
+
+/*.SlideNavList-button--secondary .icon--search:before {
+  top: 0;
+  margin-right: 0
+}*/
+
+/*.SlideNavList-button--secondary .icon:before {
+  color: rgba(255,255,255,0.35)
+}
+
+.SlideNavList .icon--logoM:before {
+  line-height: 46px
+}
+*/
+.SlideNavList-button--centered {
+  display: block;
+  margin: 15px 18px 0 18px
+}
+
+/*.SlideNav-logo .icon--logoM:before {
+  color: #333332;
+  font-size: 27px;
+  line-height: 48px
+}
+*/

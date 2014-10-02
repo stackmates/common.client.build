@@ -1,0 +1,14 @@
+{
+  "name": "banners",
+  "version": "0.0.1",
+  "description": "banners",
+  "style": "banners.css",
+  "keywords": [
+    "css",
+    "banners",
+    "elements"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

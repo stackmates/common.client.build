@@ -1,0 +1,12 @@
+{
+  "name": "fadeInAnimation",
+  "style": "fade_in.css",
+  "keywords": [
+    "css",
+    "animation",
+    "fade"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

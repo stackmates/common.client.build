@@ -1,0 +1,10 @@
+{
+  "name": "size.css",
+  "version": "0.0.1",
+  "description": "size.css copied from suitcss",
+  "main": "index.html",
+  "style": "size.css",
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

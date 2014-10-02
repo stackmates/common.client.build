@@ -1,0 +1,12 @@
+{
+  "name": "grid",
+  "version": "0.0.1",
+  "description": "dreamineering grid",
+  "style": "grid.css",
+  "keywords": [
+    "css"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

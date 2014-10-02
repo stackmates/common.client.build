@@ -1,0 +1,4 @@
+{
+  "name": "common.components.quarks.validations.uniqueEmail",
+  "main": "unique_email"
+}

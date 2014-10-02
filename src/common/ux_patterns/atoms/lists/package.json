@@ -1,0 +1,14 @@
+{
+  "name": "lists",
+  "version": "0.0.1",
+  "description": "lists",
+  "style": "lists.css",
+  "keywords": [
+    "css",
+    "lists",
+    "bem"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

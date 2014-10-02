@@ -1,0 +1,16 @@
+{
+  "name": "zk-module-grid-gallery",
+  "version": "0.0.1",
+  "description": "ZK grid gallery",
+  "main": "grid_gallery.js",
+  "style": "grid_gallery.css",
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "bem",
+    "grid gallery"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

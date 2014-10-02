@@ -1,0 +1,9 @@
+
+/* banner a full height banner */
+
+
+.Banner--home {
+  background: var(--color-brand);
+  background-size: cover;
+  font-weight: light;
+}

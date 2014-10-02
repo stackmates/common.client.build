@@ -1,0 +1,16 @@
+{
+  "name": "zk-blueprint-on-scroll-effect",
+  "version": "0.0.1",
+  "description": "ZK on scroll layout",
+  "main": "on_scroll_effect.js",
+  "style": "on_scroll_effect.css",
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "bem",
+    "on scroll effect"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

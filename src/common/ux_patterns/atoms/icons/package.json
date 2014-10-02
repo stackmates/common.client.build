@@ -1,0 +1,14 @@
+{
+  "name": "icons",
+  "version": "0.0.1",
+  "description": "icons",
+  "style": "icons.css",
+  "keywords": [
+    "css",
+    "icons",
+    "bem"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

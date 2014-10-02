@@ -1,0 +1,16 @@
+{
+  "name": "site-nav-overlay",
+  "version": "0.0.1",
+  "description": "site nav overlay",
+  "main": "site_nav_overlay.js",
+  "style": "site_nav_overlay.css",
+  "keywords": [
+    "css",
+    "navigation",
+    "browserify",
+    "codrops"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "flipping_card",
+  "version": "0.0.1",
+  "description": "flipping cards",
+  "style": "card--flipping.css",
+  "keywords": [
+    "css",
+    "cards",
+    "flipping"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

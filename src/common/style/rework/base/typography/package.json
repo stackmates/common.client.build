@@ -1,0 +1,14 @@
+{
+  "name": "typography",
+  "version": "0.0.1",
+  "description": "typography",
+  "style": "typography.css",
+  "keywords": [
+    "css",
+    "typography",
+    "elements"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

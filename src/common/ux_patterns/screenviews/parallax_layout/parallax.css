@@ -1,0 +1,70 @@
+
+/**
+ *
+ * Reference
+ * http://blog.keithclark.co.uk/pure-css-parallax-websites/
+ *
+ * WHY?
+ *
+ * HOW?
+ *
+ * Layer speed is controlled by a combination of the perspective and
+ * the Z translation values. Elements with negative Z values will scroll
+ * slower than those with a positive value. The further the value is from
+ * 0 the more pronounced the parallax effect (i.e. translateZ(-10px) will
+ *  scroll slower than translateZ(-1px)).
+ *
+ *
+ * Keep in mind when grouping elements you cannot clip the content of
+ * a group. Setting overflow: hidden on a parallax__group will break
+ * the parallax effect. THEREFORE be creative with the z-index values
+ * of the groups to ensure content is correctly revealed/hidden as
+ * the visitor scrolls through the document.
+ *
+ *
+ * REALITY
+ *
+ * IE does not suppoert perserve-3d yet
+ *
+ * vh is viewport height
+ * http://snook.ca/archives/html_and_css/vm-vh-units
+ *
+ */
+
+
+.Parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.Parallax-group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.Parallax-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.Parallax-layer--base {
+  transform: translateZ(0);
+}
+
+.Parallax-layer--back {
+  transform: translateZ(-1px) scale(2);
+}
+
+.Parallax-layer--deep {
+  transform: translateZ(-2px) scale(3);
+}
+
+
+
+

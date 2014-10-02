@@ -1,0 +1,16 @@
+{
+  "name": "zk-fixed_responsive_nav",
+  "version": "0.0.1",
+  "description": "ZK fixed responsive nav",
+  "main": "fixed_responsive_nav.js",
+  "style": "fixed_responsive_nav.css",
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "bem",
+    "on scroll effect"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

@@ -1,0 +1,75 @@
+
+
+.toggle {
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 104px;
+  height: 74px;
+  padding: 30px 50px;
+  z-index: 1000;
+  /*background-color: #FFF;*/
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+}
+
+.toggle__patty {
+  position: relative;
+  width: 24px;
+  height: 4px;
+  margin: 10px 0;
+  background: var(--text-color);
+  transition: all 0.3s;
+}
+
+.toggle__patty:after,
+.toggle__patty:before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 4px;
+  background: var(--text-color);
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s;
+}
+.toggle__patty:before {
+  top: -8px;
+}
+.toggle__patty:after {
+  top: 8px;
+}
+
+.toggle:hover {
+  transition: top 0.4s
+}
+
+.toggle:hover .toggle__patty:before {
+  top: -9px
+}
+
+.toggle:hover .toggle__patty:after {
+  top: 9px
+}
+
+
+.toggle.is-hidden .toggle__patty {
+    background: none !important
+}
+
+
+.toggle.is-hidden .toggle__patty:after {
+    top: 0 !important;
+    background: var(--text-color);
+    transform: rotate(45deg)
+}
+
+.toggle.is-hidden .toggle__patty:before {
+    top: 0 !important;
+    background: var(--text-color);
+    transform: rotate(-45deg)
+}

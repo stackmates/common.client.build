@@ -1,0 +1,20 @@
+{
+  "name": "zk organism main nav",
+  "version": "0.0.1",
+  "description": "ZK organism main nav",
+  "main": "index.html",
+  "style": "styles/main_nav.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dreamineering/zk-o-main-nav.git"
+  },
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "molecule",
+    "main nav"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

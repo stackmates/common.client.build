@@ -1,0 +1,15 @@
+{
+  "name": "is-touch-device",
+  "private": "true",
+  "version": "0.0.1",
+  "description": "figure out if you have touch device",
+  "main": "index.js",
+  "keywords": [
+    "css",
+    "touch check",
+    "browserify"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

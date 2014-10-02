@@ -1,0 +1,16 @@
+{
+  "name": "classie",
+  "private": "true",
+  "version": "0.0.1",
+  "description": "work with classes more mintly",
+  "main": "index.js",
+  "keywords": [
+    "css",
+    "navigation",
+    "browserify",
+    "codrops"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

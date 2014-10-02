@@ -1,0 +1,31 @@
+html, body {
+  height: 100%;
+}
+.__page-container {
+  height: 100%;
+}
+
+
+.__content-container {
+  position: relative;
+  z-index: var(--zIndex-2);
+/*  height: 100%;*/
+  margin-bottom: 0;
+  background-color: #FFF;
+}
+/*
+ * The following works in conjuntion with the footer
+ * so make sure media queries and heights are aligned
+ */
+@media office-and-up {
+  .__content-container   {
+    margin-bottom: var(--footer-container-MB);
+  }
+}
+.__content {
+  extend: .clearfix;
+  margin: 0 auto;
+/*  height: 100%;*/
+}
+
+

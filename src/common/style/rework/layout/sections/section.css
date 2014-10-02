@@ -1,0 +1,62 @@
+
+
+
+.__section {
+  extend: .clearfix;
+  padding: var(--sectionPaddingPocket);
+}
+@media purse-and-up {
+ .__section {
+    padding: var(--sectionPaddingPurseAndUp);
+  }
+}
+@media sofa-and-up {
+ .__section {
+    padding: var(--sectionPaddingSofaAndUp);
+  }
+}
+@media office {
+ .__section {
+    padding: var(--sectionPaddingOfficeAndUp);
+  }
+}
+
+
+.__section > *:last-child,
+.__section > *:last-child > *:last-child,
+.__section > *:last-child > *:last-child > *:last-child {
+  margin-bottom: 0;
+}
+
+/* The Main Section Categories */
+._site-width {
+  extend: .clearfix;
+  margin: 0 auto;
+  width: 85%;
+}
+@media purse-and-up {
+  ._site-width {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    clear: left;
+  }
+}
+
+
+._copy-width {
+  width: 100%;
+  margin: 0 auto;
+}
+._copy-width--footer {
+  width: 90%;
+}
+@media purse-and-up {
+  ._copy-width {
+    width: 83%;
+    margin: 0 auto;
+  }
+  ._copy-width--footer {
+    width: 70%;
+  }
+}

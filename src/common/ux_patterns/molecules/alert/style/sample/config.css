@@ -1,0 +1,8 @@
+
+:root {
+  --alert-border:                 3px solid black;
+  --alert-marginBottom:           var(--spaceMedium);
+  --alert-infoColor:              var(--information);
+  --alert-successColor:           var(--positive);
+  --alert-errorColor:             var(--error);
+}

@@ -1,0 +1,19 @@
+{
+  "name": "zk-elements",
+  "version": "0.0.1",
+  "description": "ZK elements",
+  "main": "index.html",
+  "style": "elements.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dreamineering/zk-elements.git"
+  },
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "elements"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

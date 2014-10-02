@@ -1,0 +1,13 @@
+{
+  "name": "base",
+  "version": "0.0.1",
+  "description": "base",
+  "main": "index.html",
+  "style": "base.css",
+  "keywords": [
+    "css"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

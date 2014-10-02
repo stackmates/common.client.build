@@ -1,0 +1,15 @@
+{
+  "name": "drmg-zk-toggle",
+  "version": "0.0.1",
+  "description": "Dreamineering ZK Atoms Toggle",
+  "style": "toggle.css",
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "bem",
+    "toggle"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

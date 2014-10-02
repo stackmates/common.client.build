@@ -1,0 +1,45 @@
+:root {
+  /*var-collapse-width: 42em;*/
+}
+
+/* Structure */
+.__Topbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: var(top-bar-height);
+  line-height: var(top-bar-height);
+  /*padding: 0 20px;*/
+  width: 100%;
+  z-index: var(top-bar);
+}
+.Topbar {
+  text-align: center;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  background-color: white;
+}
+
+  ._Topbar__back, ._Topbar__menu {
+    z-index: 1100;
+    position: absolute;
+    /*line-height: var(top-bar-height);*/
+    top: 0;
+  }
+  ._Topbar__back {
+    left: 0;
+  }
+  ._Topbar__heading {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    line-height: var(top-bar-height);
+  }
+  ._Topbar__menu {
+    right: 0;
+  }
+
+

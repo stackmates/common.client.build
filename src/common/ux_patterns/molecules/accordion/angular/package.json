@@ -1,0 +1,5 @@
+{
+  "name"  : "common.accordion",
+  "main"  : "accordion_directive",
+  "style" : "style/accordion.css"
+}

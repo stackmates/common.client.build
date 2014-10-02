@@ -1,0 +1,20 @@
+{
+  "name": "navlist",
+  "version": "0.0.1",
+  "description": "NavList",
+  "main": "index.html",
+  "style": "navList.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dreamineering/navlist.git"
+  },
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "molecule",
+    "header"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

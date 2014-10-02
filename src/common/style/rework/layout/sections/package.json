@@ -1,0 +1,15 @@
+{
+  "name": "zk-atoms-section",
+  "version": "0.0.1",
+  "description": "ZK Atoms Section",
+  "main": "index.html",
+  "style": "section.css",
+  "keywords": [
+    "css",
+    "bem",
+    "section"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

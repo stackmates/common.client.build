@@ -1,0 +1,15 @@
+
+
+.Alert {
+  margin-bottom:  var(--alert-marginBottom);
+  border:         var(--alert-border);
+}
+.Alert-info {
+  background:     var(--alert-infoColor);
+}
+.Alert-success{
+  background:     var(--alert-successColor);
+}
+.Alert-error{
+  background:     var(--alert-errorColor)
+}

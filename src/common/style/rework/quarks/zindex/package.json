@@ -1,0 +1,19 @@
+{
+  "name": "drmg-zk-zindex",
+  "version": "0.0.1",
+  "description": "utils for setting zindex",
+  "main": "index.html",
+  "style": "zindex.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dreamineering/drmg-zk-zindex.git"
+  },
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "zindex"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

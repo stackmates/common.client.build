@@ -1,0 +1,9 @@
+
+
+:root {
+  --accordion-bgColor:           var(--grey800);
+  --accordion-color:             var(--white);
+  --accordion-padding:           var(--spaceMedium);
+  --accordion-toggleColor        var(--pink400);
+  --accordion-toggleColorHover   var(--pink600);
+}

@@ -1,0 +1,21 @@
+
+
+.Card {
+  overflow: hidden;
+  transform: translateX(0);
+}
+
+.Card-details, .Card-haiku {
+  transform: scale(1);
+  position: relative;
+  transition: all 0.9s;
+}
+
+.Card-haiku.is-hidden, .Card-details.is-hidden {
+
+  transform: scale(.5);
+  position: fixed;
+  top: 0;
+  left: -3000px;
+  transition: all var(--animationDuration);
+}

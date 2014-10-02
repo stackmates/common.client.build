@@ -1,0 +1,54 @@
+
+
+/*
+ * Main Container
+ *
+ * this works with menu_slide pattern
+ *
+ *
+ */
+
+body.is-slideNavOpen .ContentContainer {
+  transform: translate3d(280px, 0, 0)
+}
+.is-transitioningSlideNav {
+  overflow: hidden;
+  height: 100%
+}
+.is-transitioningSlideNav .ContentContainer {
+  z-index: 800
+}
+.ContentContainer {
+  height: 100%;
+}
+
+/* Nav */
+
+.is-transitioningSlideNav .SlideNav {
+  z-index: auto
+}
+body.is-transitioningSlideNav .SlideNav {
+  position: fixed
+}
+
+.SlideNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  outline: none;
+  background-color: #191918;
+}
+
+/* Main Site */
+
+body.is-slideNavOpen .SiteMain {
+  transition-duration: 250ms;
+}
+
+.SiteMain {
+  background: #FFF;
+  transition: transform 150ms cubic-bezier(.2, .3, .25, .9);
+}
+
+/* see menu slide for rest of config details */

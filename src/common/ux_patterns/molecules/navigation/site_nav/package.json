@@ -1,0 +1,14 @@
+{
+  "name": "site-nav",
+  "version": "0.0.1",
+  "description": "site nav with hamburger",
+  "style": "site_nav.css",
+  "keywords": [
+    "css",
+    "navigation",
+    "browserify"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}
