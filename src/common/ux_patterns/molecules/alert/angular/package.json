@@ -1,5 +1,4 @@
 {
-  "name" : "common.directives.alert",
-  "main" : "alert",
-  "style" : "style/alert.css"
+  "name" : "sm.molecules.angular.alert",
+  "main" : "alert"
 }

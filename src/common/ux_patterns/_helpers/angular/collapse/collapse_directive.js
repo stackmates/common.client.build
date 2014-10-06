@@ -1,61 +1,80 @@
 'use strict';
 
-module.exports = angular.module('common.directives.collapse',[
+module.exports = angular.module('sm.micro.collapse',[
   require('ux_patterns/_helpers/angular/transition').name
 ])
 
-// Simpilfied for now to get working.
-// But would prefer to use animations with animate.css
 
-// The collapsible directive indicates a block of html that will expand and collapse
-.directive('collapse', Collapse );
-
-
-function Collapse () {
-  // CSS transitions don't work with height: auto, so we have to manually change the height to a
-  // specific value and then once the animation completes, we can reset the height to auto.
-  // Unfortunately if you do this while the CSS transitions are specified (i.e. in the CSS class
-  // "collapse") then you trigger a change to height 0 in between.
-  // The fix is to remove the "collapse" CSS class while changing the height back to auto - phew!
-
-  // TODO investigate if needed
-  //var fixUpHeight = function(scope, element, height) {
-    // We remove the collapse CSS class to prevent a transition when we change to height: auto
-    //element.removeClass('collapse');
-    //element.css({ height: height });
-    // It appears that  reading offsetWidth makes the browser realise that we have changed the
-    // height already :-/
-    //var x = element[0].offsetWidth;
-    //element.addClass('collapse');
-  //};
+.directive('collapse', ['$transition', function ($transition) {
 
   return {
-    link: function(scope, element, attrs) {
+    link: function (scope, element, attrs) {
 
-      var isCollapsed;
+      var initialAnimSkip = true;
+      var currentTransition;
 
-      element.addClass('collapse');
+      function doTransition(change) {
+        var newTransition = $transition(element, change);
+        if (currentTransition) {
+          currentTransition.cancel();
+        }
+        currentTransition = newTransition;
+        newTransition.then(newTransitionDone, newTransitionDone);
+        return newTransition;
 
-      scope.$watch(attrs.collapse, function(value) {
-        if (value) {
+        function newTransitionDone() {
+          // Make sure it's this transition, otherwise, leave it alone.
+          if (currentTransition === newTransition) {
+            currentTransition = undefined;
+          }
+        }
+      }
+
+      function expand() {
+        if (initialAnimSkip) {
+          initialAnimSkip = false;
+          expandDone();
+        } else {
+          element.removeClass('collapse').addClass('collapsing');
+          doTransition({ height: element[0].scrollHeight + 'px' }).then(expandDone);
+        }
+      }
+
+      function expandDone() {
+        element.removeClass('collapsing');
+        element.addClass('collapse in');
+        element.css({height: 'auto'});
+      }
+
+      function collapse() {
+        if (initialAnimSkip) {
+          initialAnimSkip = false;
+          collapseDone();
+          element.css({height: 0});
+        } else {
+          // CSS transitions don't work with height: auto, so we have to manually change the height to a specific value
+          element.css({ height: element[0].scrollHeight + 'px' });
+          //trigger reflow so a browser realizes that height was updated from auto to a specific value
+          var x = element[0].offsetWidth;
+
+          element.removeClass('collapse in').addClass('collapsing');
+
+          doTransition({ height: 0 }).then(collapseDone);
+        }
+      }
+
+      function collapseDone() {
+        element.removeClass('collapsing');
+        element.addClass('collapse');
+      }
+
+      scope.$watch(attrs.collapse, function (shouldCollapse) {
+        if (shouldCollapse) {
           collapse();
         } else {
           expand();
         }
       });
-
-      var expand = function() {
-        element.addClass('in');
-        isCollapsed = false;
-      };
-
-      var collapse = function() {
-        isCollapsed = true;
-        element.removeClass('in');
-      };
     }
   };
-
-}
-
-
+}]);

@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = angular.module('sm.molecule.carousel', [
+module.exports = angular.module('sm.molecules.carousel', [
   require('ux_patterns/_helpers/angular/transition').name
 ])
 

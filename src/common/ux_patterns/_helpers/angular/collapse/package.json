@@ -2,5 +2,4 @@
   "name" : "common.angular.micro.collapse",
   "main" : "collapse_directive",
   "style" : "style/collapse.css"
-
 }
