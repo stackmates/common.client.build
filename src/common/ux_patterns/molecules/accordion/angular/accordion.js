@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sm.molecules.accordion', [
+module.exports = angular.module('sm.molecules.accordion', [
   require('ux_patterns/_helpers/angular/collapse').name
 ])
 

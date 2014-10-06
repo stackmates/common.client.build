@@ -1,5 +1,4 @@
 {
-  "name"  : "common.accordion",
-  "main"  : "accordion_directive",
-  "style" : "style/accordion.css"
+  "name"  : "sm.molecules.accordion",
+  "main"  : "accordion"
 }

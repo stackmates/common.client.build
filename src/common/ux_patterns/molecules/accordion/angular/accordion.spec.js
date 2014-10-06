@@ -1,15 +1,15 @@
 
 'use strict';
 
-var app = require('./accordion_directive');
+var app = require('./accordion');
 
 describe('Accordion', function () {
   var $scope;
 
-  beforeEach(angular.mock.module('common.accordion'));
-  beforeEach(angular.mock.module('app.templates'));
-  //beforeEach(module('common.components./molecules/accordions/templates/accordion.html'));
-  //beforeEach(module('directives/molecules/accordions/templates/accordion-group.html'));
+  beforeEach(angular.mock.module('csm.molecules.accordion'));
+  beforeEach(angular.mock.module('accordion.html'));
+  beforeEach(angular.mock.module('accordion-group.html'));
+
 
   beforeEach(inject(function($rootScope){
     $scope = $rootScope;

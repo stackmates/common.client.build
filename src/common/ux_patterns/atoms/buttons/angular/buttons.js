@@ -7,24 +7,22 @@
 // of the button.
 // Using compile can provide a significant performance optimization”
 
-module.exports = angular.module( 'common.directives.buttons', [])
+module.exports = angular.module( 'sm.atoms.buttons', [])
 
-.directive('button',
-  function(){
-    return {
-      restrict: 'E',
-      compile: function(element, attrs) {
-        element.addClass('Button');
-        if( attrs.type === 'submit' ) {
-          element.addClass('Button--primary');
-        }
-        if(attrs.size) {
-          element.addClass('Button--' + attrs.size );
-        }
-      }
-    };
-  }
-)
+.constant('buttonConfig', {
+  activeClass: 'active',
+  toggleEvent: 'click'
+})
+
+
+.controller('ButtonsController', ['buttonConfig', function(buttonConfig) {
+  this.activeClass = buttonConfig.activeClass || 'active';
+  this.toggleEvent = buttonConfig.toggleEvent || 'click';
+}])
+
+
+.directive('button',         require('./directives/button_directive'))
+.directive('buttonRadio',    require('./directives/button_radio_directive'))
+.directive('buttonCheckbox', require('./directives/button_checkbox_directive'))
 
 ;
-

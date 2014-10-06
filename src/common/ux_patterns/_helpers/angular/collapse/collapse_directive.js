@@ -1,9 +1,8 @@
 'use strict';
 
 module.exports = angular.module('common.directives.collapse',[
-  require('ux_patterns/_helpers/angular/transition_service').name
+  require('ux_patterns/_helpers/angular/transition').name
 ])
-
 
 // Simpilfied for now to get working.
 // But would prefer to use animations with animate.css
