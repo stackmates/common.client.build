@@ -1,6 +1,6 @@
 {
-  "name" : "common.components.quarks.collapse",
-  "main" : "collapse_component",
+  "name" : "common.angular.micro.collapse",
+  "main" : "collapse_directive",
   "style" : "style/collapse.css"
 
 }

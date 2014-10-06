@@ -1,8 +1,7 @@
 'use strict';
 
 module.exports = angular.module('common.directives.collapse',[
-  // 'common.components.quarks.transition',
-  require('./transition_service').name
+  require('ux_patterns/_helpers/angular/transition_service').name
 ])
 
 

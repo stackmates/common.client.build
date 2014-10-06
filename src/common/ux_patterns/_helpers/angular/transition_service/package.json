@@ -1,4 +1,4 @@
 {
-  "name" : "common.components.quarks.transition",
-  "main" : "transition_component"
+  "name" : "common.angular.micro.transition",
+  "main" : "transition_service"
 }

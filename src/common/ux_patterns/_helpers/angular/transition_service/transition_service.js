@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = angular.module('common.directives.transition', [])
+module.exports = angular.module('sm.micro.transition', [])
 
 /**
  * $transition service provides a consistent interface to trigger CSS 3 transitions and to be informed when they complete.

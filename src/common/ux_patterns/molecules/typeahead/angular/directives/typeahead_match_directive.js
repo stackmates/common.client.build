@@ -19,12 +19,3 @@ module.exports = /*@ngInject*/
       }
     };
   };
-
-
-
-// <script type="text/ng-template" id="customTemplate.html">
-//   <a>
-//       <img ng-src="http://upload.wikimedia.org/wikipedia/commons/thumb/{{match.model.flag}}" width="16">
-//       <span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
-//   </a>
-// </script>
