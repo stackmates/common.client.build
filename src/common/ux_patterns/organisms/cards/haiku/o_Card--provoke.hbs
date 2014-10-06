@@ -136,6 +136,13 @@
             </ol>
             {{/if}}
 
+            {{#if this.mainQuote }}
+            <blockquote class='u-paddingBl'>
+              <p>{{{ this.mainQuote }}}</p>
+              <cite><a href={{{ this.mainQuoteInsightLink}}}>{{{ this.mainQuoteCite }}}</a></cite>
+            </blockquote>
+            {{/if }}
+
             <div class='u-bottomLeft'>
                 <a href="#"
                    class='u-linkClean'
@@ -153,10 +160,7 @@
             </div>
 
 
-            <blockquote class='u-paddingBl'>
-              <p>{{{ this.mainQuote }}}</p>
-              <cite><a href={{{ this.mainQuoteInsightLink}}}>{{{ this.mainQuoteCite }}}</a></cite>
-            </blockquote>
+
 
           </div>
 

@@ -22,8 +22,14 @@ require('./tasks/sheets')(cfg);              // build json from google spreadshe
 require('./tasks/styles')(cfg);              // rework style build
 require('./tasks/styles_sass')(cfg);         // sass style build
 
-require('./tasks/metalsmith');               // static content builder
-require('./tasks/templates')(cfg);           // html to js for angular
+if (cfg.type === 'site') {
+  require('./tasks/metalsmith');             // static content builder
+}
+
+if (cfg.type === 'app') {
+  require('./tasks/templates')(cfg);           // html to js for angular
+}
+
 
 require('./tasks/browserify');               // browserify angularjs.app (needed?)
 require('./tasks/karma')(cfg);               // test javascript

@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = angular.module('common.directives.position', [])
+module.exports = angular.module('sm.micro.position', [])
 
 /**
  * A set of utility methods that can be use to retrieve position of DOM elements.
@@ -8,8 +8,10 @@ module.exports = angular.module('common.directives.position', [])
  * relation to other, existing elements (this is the case for tooltips, popovers,
  * typeahead suggestions etc.).
  */
-.factory('$position',
-  function ($document, $window) {
+.factory('$position', position );
+
+
+function position ($document, $window) {
 
     function getStyle(el, cssprop) {
       if (el.currentStyle) { //IE
@@ -82,7 +84,4 @@ module.exports = angular.module('common.directives.position', [])
 
     };
 
-  }
-)
-
-;
+  };
