@@ -6,7 +6,7 @@ var app = require('./accordion');
 describe('Accordion', function () {
   var $scope;
 
-  beforeEach(angular.mock.module('csm.molecules.accordion'));
+  beforeEach(angular.mock.module('sm.molecules.accordion'));
   beforeEach(angular.mock.module('accordion.html'));
   beforeEach(angular.mock.module('accordion-group.html'));
 

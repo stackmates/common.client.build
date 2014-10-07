@@ -8,7 +8,7 @@ var _o;
 module.exports = /*@ngInject*/
   function accordionGroup ($parse) {
     return {
-      require: '^accordion',
+      require: '^accordion',        // We need this directive to be inside an accordion
       restrict: 'EA',
       transclude: true,
       replace: true,

@@ -14,11 +14,11 @@ module.exports = angular.module( 'sm.atoms.tooltip', [
  * The $tooltip service creates tooltip- and popover-like directives as well as
  * houses global options for them.
  */
-.provider( '$tooltip',                require('services/tooltip_service'))
+.provider( '$tooltip',                require('./services/tooltip_service'))
 
-.directive( 'tooltipPopup',           require('services/tooltip_popup_directive'))
-.directive( 'tooltip',                require('services/tooltip_directive'))
-.directive( 'tooltipHtmlUnsafePopup', require('services/tooltip_html_unsafe_popup_directive'))
-.directive( 'tooltipHtmlUnsafe',      require('services/tooltip_html_unsafe_directive'))
+.directive( 'tooltipPopup',           require('./directives/tooltip_popup_directive'))
+.directive( 'tooltip',                require('./directives/tooltip_directive'))
+.directive( 'tooltipHtmlUnsafePopup', require('./directives/tooltip_html_unsafe_popup_directive'))
+.directive( 'tooltipHtmlUnsafe',      require('./directives/tooltip_html_unsafe_directive'))
 
 ;

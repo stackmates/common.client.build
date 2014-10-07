@@ -6,7 +6,7 @@ module.exports = angular.module('sm.molecules.accordion', [
 
 .constant('accordionConfig', { closeOthers: true })
 
-.controller('AccordionController', require('./controllers/accordion_controller'))
+.controller('smAccordionController', require('./controllers/accordion_controller'))
 
 .directive('accordion',            require('./directives/accordion_directive'))
 .directive('accordionGroup',       require('./directives/accordion_group_directive'))

@@ -15,7 +15,7 @@ module.exports = angular.module( 'sm.molecules.angular.popover', [
     restrict: 'EA',
     replace: true,
     scope: { title: '@', content: '@', placement: '@', animation: '&', isOpen: '&' },
-    templateUrl: 'popover.html'
+    templateUrl: 'popup.html'
   };
 })
 

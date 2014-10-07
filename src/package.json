@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "angular-form-for": "^1.2.16",
-    "angular-ui-router": "^0.2.10",
+    "angular-ui-router": "^0.2.11",
     "baconjs": "~0.7.6",
     "center": "git://github.com/npm-dom/center",
     "component-transitionend-property": "git://github.com/npmcomponent/component-transitionend-property",

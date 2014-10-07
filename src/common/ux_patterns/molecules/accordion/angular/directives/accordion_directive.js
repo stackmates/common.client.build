@@ -7,7 +7,7 @@ module.exports = /*@ngInject*/
   function accordion () {
     return {
       restrict: 'EA',
-      controller: 'AccordionController',
+      controller: 'smAccordionController',
       transclude: true,
       replace: false,
       templateUrl: 'accordion.html'

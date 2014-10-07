@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sm.molecules.tabs', [])
+module.exports = angular.module('sm.molecules.tabs', [])
 
 .controller('TabsetController', require('./controllers/tabset_controller'))
 
