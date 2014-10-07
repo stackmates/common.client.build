@@ -56,11 +56,9 @@
   top: 9px
 }
 
-
 .toggle.is-hidden .toggle__patty {
     background: none !important
 }
-
 
 .toggle.is-hidden .toggle__patty:after {
     top: 0 !important;
@@ -73,3 +71,5 @@
     background: var(--text-color);
     transform: rotate(-45deg)
 }
+
+

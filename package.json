@@ -108,7 +108,7 @@
     "rework-breakpoints": "~0.6.0",
     "rework-calc": "~0.2.1",
     "rework-color-function": "~0.1.2",
-    "rework-custom-media": "^0.1.1",
+    "rework-custom-media": "^0.2.0",
     "rework-deduplicate": "~0.1.1",
     "rework-font-variant": "^1.0.0",
     "rework-hex-alpha": "^1.0.0",

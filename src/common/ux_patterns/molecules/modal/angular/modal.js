@@ -10,9 +10,9 @@ module.exports = angular.module('sm.molecules.modal', [
 .factory('$modalStack',       require('./services/modal_stack_service'))
 .provider('$modal',           require('./services/modal_provider'))
 
-.directive('modalBackdrop',   require('./services/modal_backdrop_directive'))
-.directive('modalWindow',     require('./services/modal_window_directive'))
-.directive('modalTransclude', require('./services/modal_transclude_directive'))
+.directive('modalBackdrop',   require('./directives/modal_backdrop_directive'))
+.directive('modalWindow',     require('./directives/modal_window_directive'))
+.directive('modalTransclude', require('./directives/modal_transclude_directive'))
 
 ;
 

@@ -1,12 +1,10 @@
-<div class="Accordion-group">
-
-  <div class="Accordion-heading" >
-    <a class="Accordion-toggle" ng-click="isOpen = !isOpen" accordion-transclude="heading">{{heading}}</a>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a class="accordion-toggle" ng-click="toggleOpen()" accordion-transclude="heading"><span ng-class="{'text-muted': isDisabled}">{{heading}}</span></a>
+    </h4>
   </div>
-
-  <div class="Accordion-body" collapse="!isOpen">
-
-    <div class="Accordion-inner" ng-transclude></div>
-
+  <div class="panel-collapse" collapse="!isOpen">
+    <div class="panel-body" ng-transclude></div>
   </div>
 </div>
