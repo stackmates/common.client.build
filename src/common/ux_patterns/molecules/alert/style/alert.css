@@ -1,17 +1,17 @@
 
 
 .Alert {
-  margin-bottom:  var(--alert-marginBottom);
-  border:         var(--alert-border);
+  margin-bottom:  var(--Alert-margin-bottom);
+  border:         var(--Alert-border);
 }
 .Alert-info {
-  background:     var(--alert-infoColor);
+  background:     var(--Alert-color--info);
 }
 .Alert-success{
-  background:     var(--alert-successColor);
+  background:     var(--Alert-color--success);
 }
 .Alert-error{
-  background:     var(--alert-errorColor)
+  background:     var(--Alert-color--error);
 }
 
 
