@@ -22,7 +22,7 @@ module.exports = angular.module( 'sm.atoms.buttons', [])
 
 
 .directive('button',         require('./directives/button_directive'))
-.directive('buttonRadio',    require('./directives/button_radio_directive'))
-.directive('buttonCheckbox', require('./directives/button_checkbox_directive'))
+.directive('btnRadio',    require('./directives/button_radio_directive'))
+.directive('btnCheckbox', require('./directives/button_checkbox_directive'))
 
 ;

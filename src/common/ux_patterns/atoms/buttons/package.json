@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "ZK Atoms Button",
   "main": "index.html",
-  "style": "button.css",
+  "style": "style/button.css",
   "keywords": [
     "css",
     "ztylekitchen",

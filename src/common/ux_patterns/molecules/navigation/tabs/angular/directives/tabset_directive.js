@@ -10,7 +10,7 @@ module.exports = /*@ngInject*/
         type: '@'
       },
       controller: 'TabsetController',
-      templateUrl: 'template/tabs/tabset.html',
+      templateUrl: 'tabset.html',
       link: function(scope, element, attrs) {
         scope.vertical = angular.isDefined(attrs.vertical) ? scope.$parent.$eval(attrs.vertical) : false;
         scope.justified = angular.isDefined(attrs.justified) ? scope.$parent.$eval(attrs.justified) : false;

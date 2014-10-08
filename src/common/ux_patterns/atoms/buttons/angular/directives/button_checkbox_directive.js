@@ -3,7 +3,7 @@
 module.exports = /*@ngInject*/
   function buttonCheckbox () {
     return {
-      require: ['buttonCheckbox', 'ngModel'],
+      require: ['btnCheckbox', 'ngModel'],
       controller: 'ButtonsController',
       link: function (scope, element, attrs, ctrls) {
         var buttonsCtrl = ctrls[0], ngModelCtrl = ctrls[1];

@@ -6,7 +6,7 @@ module.exports = /*@ngInject*/
     return {
       restrict: 'EA',
       replace: true,
-      templateUrl: 'template/datepicker/month.html',
+      templateUrl: 'month.html',
       require: '^datepicker',
       link: function(scope, element, attrs, ctrl) {
         ctrl.step = { years: 1 };

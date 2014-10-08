@@ -12,7 +12,7 @@ module.exports = /*@ngInject*/
       },
       require: ['pager', '?ngModel'],
       controller: 'PaginationController',
-      templateUrl: 'template/pagination/pager.html',
+      templateUrl: 'pager.html',
       replace: true,
       link: function(scope, element, attrs, ctrls) {
         var paginationCtrl = ctrls[0], ngModelCtrl = ctrls[1];

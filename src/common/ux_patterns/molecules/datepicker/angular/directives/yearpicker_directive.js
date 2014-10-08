@@ -6,7 +6,7 @@ module.exports = /*@ngInject*/
     return {
       restrict: 'EA',
       replace: true,
-      templateUrl: 'template/datepicker/year.html',
+      templateUrl: 'year.html',
       require: '^datepicker',
       link: function(scope, element, attrs, ctrl) {
         var range = ctrl.yearRange;

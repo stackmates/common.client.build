@@ -3,7 +3,7 @@
 module.exports = /*@ngInject*/
   function buttonRadio () {
     return {
-      require: ['buttonRadio', 'ngModel'],
+      require: ['btnRadio', 'ngModel'],
       controller: 'ButtonsController',
       link: function (scope, element, attrs, ctrls) {
         var buttonsCtrl = ctrls[0], ngModelCtrl = ctrls[1];

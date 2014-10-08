@@ -6,7 +6,7 @@ module.exports = /*@ngInject*/
       require: '^tabset',
       restrict: 'EA',
       replace: true,
-      templateUrl: 'template/tabs/tab.html',
+      templateUrl: 'tab.html',
       transclude: true,
       scope: {
         active: '=?',

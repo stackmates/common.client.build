@@ -6,7 +6,7 @@ module.exports = /*@ngInject*/
     return {
       restrict: 'EA',
       replace: true,
-      templateUrl: 'template/datepicker/day.html',
+      templateUrl: 'day.html',
       require: '^datepicker',
       link: function(scope, element, attrs, ctrl) {
         scope.showWeeks = ctrl.showWeeks;

@@ -1,12 +1,4 @@
 
-.collapse {
-  display: none;
-  &.in {
-    display: block;
-  }
-}
-
-
 /* this should be a state modifier rule */
 
 .fade.in {

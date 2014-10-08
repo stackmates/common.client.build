@@ -1,4 +1,7 @@
 {
-  "name": "sm.css.base.labels",
+  "name": "zk-layout",
   "style": "labels.css",
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
 }
