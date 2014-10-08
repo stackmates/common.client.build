@@ -1,10 +1,9 @@
 'use strict';
 
-
-angular.module('directives.molecules.field', [
-  'input.html',
-  'textarea.html',
-  'select.html'
+module.exports = angular.module('sm.molecules.inputs', [
+  require('./templates/input.html').name,
+  require('./templates/textarea.html').name,
+  require('./templates/select.html').name
 ])
 
 .directive('field', function($compile, $http, $templateCache, $interpolate) {
