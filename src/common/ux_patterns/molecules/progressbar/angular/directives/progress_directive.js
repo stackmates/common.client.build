@@ -9,6 +9,6 @@ module.exports = /*@ngInject*/
       controller: 'ProgressController',
       require: 'progress',
       scope: {},
-      templateUrl: 'template/progressbar/progress.html'
+      templateUrl: 'progress.html'
     };
   }

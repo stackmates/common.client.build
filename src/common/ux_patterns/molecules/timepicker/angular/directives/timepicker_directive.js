@@ -8,7 +8,7 @@ module.exports = /*@ngInject*/
       controller:'TimepickerController',
       replace: true,
       scope: {},
-      templateUrl: 'template/timepicker/timepicker.html',
+      templateUrl: 'timepicker.html',
       link: function(scope, element, attrs, ctrls) {
         var timepickerCtrl = ctrls[0], ngModelCtrl = ctrls[1];
 

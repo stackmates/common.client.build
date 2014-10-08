@@ -6,6 +6,6 @@ module.exports = /*@ngInject*/
       restrict: 'EA',
       replace: true,
       scope: { content: '@', placement: '@', animation: '&', isOpen: '&' },
-      templateUrl: 'template/tooltip/tooltip-popup.html'
+      templateUrl: 'tooltip-popup.html'
     };
   }

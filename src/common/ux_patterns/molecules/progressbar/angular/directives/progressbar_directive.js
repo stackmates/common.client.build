@@ -11,7 +11,7 @@ module.exports = /*@ngInject*/
           value: '=',
           type: '@'
       },
-      templateUrl: 'template/progressbar/progressbar.html',
+      templateUrl: 'progressbar.html',
       link: function(scope, element, attrs, progressCtrl) {
           progressCtrl.addBar(scope, angular.element(element.children()[0]));
       }
