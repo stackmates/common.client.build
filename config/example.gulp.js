@@ -40,7 +40,9 @@ var config = {
 
 
 // sites
+config.uri.[your-domain]SiteLanding = require('../src/domain/[your-domain]/siteLanding/config/gulp');
 config.uri.[your-domain]SiteHome = require('../src/domain/[your-domain]/siteHome/config/gulp');
+// apps
 config.uri.[your-domain]AppLob   = require('../src/domain/[your-domain]/appLob/config/gulp');
 config.uri.[your-domain]AppIonic = require('../src/domain/[your-domain]/appIonic/config/gulp');
 
