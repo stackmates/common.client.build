@@ -134,15 +134,28 @@ Edit src/domain/[your-domain]/appLob/style/main.css
 
 build
 ```      
-gulp build -b [your-domain]SiteHome -t site     
+gulp build -b [your-domain]Site[Home | Landing] -t site     
 ```
 
 live
+browser sync (fast)
 ```
-gulp watch -b [your-domain]SiteHome -t site     
-```      
+gulp serve -b [your-domain]Site[Home | Landing] -t site     
+```
 
-**Note:** [I experience this issue ocassionally](https://github.com/joyent/node/issues/5463) just keep trying. 
+OR 
+live reload (old school)
+```
+gulp watch -b [your-domain]Site[Home | Landing] -t site     
+```
+
+
+
+**Note:** 
+
+* Using watch [I experience this issue](https://github.com/joyent/node/issues/5463) often it is annoying, but not annoying enough for me to validate looking into. Should be resolved with Node .12
+* Serve works fine with static builds but I had problems with development with angular, hence two options
+
 
 * This issue should be [resolved with release of v.12](https://www.bountysource.com/issues/337777-fs-watch-node-52551-carboncore-framework-fseventstreamstart-register_with_server-error-f2d_register_rpc-null-21)
 
@@ -186,7 +199,18 @@ client/src/domain/[your-domain]/_shared/angular/services/content_service.js
 
 #### Development
 
+**NOTE** always run a build first when changing projects when working with brower sync otherwise you will get odd results.
+
+```      
+gulp build -b smAppLob -t app      
+```
+
+
 Live
+```      
+gulp serve -b smAppLob -t app      
+```
+OR
 ```      
 gulp watch -b smAppLob -t app      
 ```
