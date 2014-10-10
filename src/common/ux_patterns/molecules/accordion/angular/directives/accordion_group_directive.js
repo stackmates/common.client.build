@@ -6,15 +6,17 @@
 var _o;
 
 module.exports = /*@ngInject*/
-  function accordionGroup ($parse) {
+  function accordionGroup () {
     return {
-      require: '^accordion',        // We need this directive to be inside an accordion
-      restrict: 'EA',
-      transclude: true,
-      replace: true,
-      templateUrl: 'accordion-group.html',
-      scope:{
-        heading:'@'
+      require:'^accordion',         // We need this directive to be inside an accordion
+      restrict:'EA',
+      transclude:true,              // It transcludes the contents of the directive into the template
+      replace: true,                // The element containing the directive will be replaced with the template
+      templateUrl:'accordion-group.html',
+      scope: {
+        heading: '@',               // Interpolate the heading attribute onto this scope
+        isOpen: '=?',
+        isDisabled: '=?'
       },
       controller: function() {
         this.setHeading = function(element) {
@@ -22,30 +24,19 @@ module.exports = /*@ngInject*/
         };
       },
       link: function(scope, element, attrs, accordionCtrl) {
-        var getIsOpen,
-            setIsOpen;
-
         accordionCtrl.addGroup(scope);
-
-        scope.isOpen = false;
-
-        if ( attrs.isOpen ) {
-          getIsOpen = $parse(attrs.isOpen);
-          setIsOpen = getIsOpen.assign;
-
-          scope.$parent.$watch(getIsOpen, function(value) {
-            scope.isOpen = !!value;
-          });
-        }
 
         scope.$watch('isOpen', function(value) {
           if ( value ) {
             accordionCtrl.closeOthers(scope);
           }
-          if ( setIsOpen ) {
-            setIsOpen(scope.$parent, value);
-          }
         });
+
+        scope.toggleOpen = function() {
+          if ( !scope.isDisabled ) {
+            scope.isOpen = !scope.isOpen;
+          }
+        };
       }
     };
-  };
+  }

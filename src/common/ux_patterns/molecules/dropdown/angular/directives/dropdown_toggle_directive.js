@@ -4,6 +4,7 @@
 module.exports = /*@ngInject*/
   function dropdownToggle () {
     return {
+      restrict: 'CA',
       require: '?^dropdown',
       link: function(scope, element, attrs, dropdownCtrl) {
         if ( !dropdownCtrl ) {

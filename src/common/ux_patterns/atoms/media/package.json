@@ -1,6 +1,6 @@
 {
-  "name": "sm.atoms.icons",
-  "style": "icons.css",
+  "name": "sm.atoms.media",
+  "style": "style/media.css",
   "author": {
     "name": "@howzus Matt Mischewski"
   }

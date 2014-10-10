@@ -45,6 +45,8 @@ require('./tasks/pagespeed')(cfg);           // performance testing
 
 require('./tasks/staticsvr')(cfg);           // test server
 // require('./tasks/git');
+
+require('./tasks/browsersync');
 require('./tasks/watch')(cfg);
 
 

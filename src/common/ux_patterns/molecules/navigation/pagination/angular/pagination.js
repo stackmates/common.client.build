@@ -20,9 +20,9 @@ module.exports = angular.module('sm.molecules.angular.pagination', [])
   align: true
 })
 
-.controller('PaginationController', require('./controllers/pagination_controller'));
+.controller('PaginationController', require('./controllers/pagination_controller'))
 
-.directive('pagination', require('./directives/pagination_directive'));
+.directive('pagination', require('./directives/pagination_directive'))
 .directive('pager', require('./directives/pager_directive'))
 
 ;

@@ -1,6 +1,6 @@
 {
-  "name": "sm.atoms.icons",
-  "style": "icons.css",
+  "name": "sm.rework.helpers",
+  "style": "collapse.css",
   "author": {
     "name": "@howzus Matt Mischewski"
   }

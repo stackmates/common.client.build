@@ -32,10 +32,6 @@ module.exports = /*@ngInject*/
       return scope.isOpen;
     };
 
-    scope.getToggleElement = function() {
-      return self.toggleElement;
-    };
-
     scope.focusToggleElement = function() {
       if ( self.toggleElement ) {
         self.toggleElement[0].focus();
@@ -65,4 +61,4 @@ module.exports = /*@ngInject*/
     $scope.$on('$destroy', function() {
       scope.$destroy();
     });
-  };
+  }

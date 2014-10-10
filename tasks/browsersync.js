@@ -1,4 +1,12 @@
+
+
 // IN THE DOGBOX AS WAS KILLING THE BROWSER
+var gulp        = require('gulp');
+var browserSync = require('browser-sync');
+var reload      = browserSync.reload;
+
+
+var cfg  = require('../config/gulp');
 
 // Watch Files For Changes & Reload
 gulp.task('serve', function () {

@@ -125,5 +125,8 @@
     "vinyl-source-stream": "~0.1.1",
     "watchify": "~0.10.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "browser-sync": "^1.5.7",
+    "gulp": "^3.8.8"
+  }
 }

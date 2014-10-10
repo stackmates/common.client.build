@@ -2,11 +2,12 @@
 
 
 module.exports = /*@ngInject*/
-  function dropdown () {
+  function dropdownDirective () {
     return {
-      controller: 'smDropdownController',
+      restrict: 'CA',
+      controller: 'DropdownController',
       link: function(scope, element, attrs, dropdownCtrl) {
         dropdownCtrl.init( element );
       }
     };
-  };
+  }
