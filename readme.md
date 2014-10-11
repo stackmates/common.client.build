@@ -30,6 +30,26 @@ Share frontend development assets so projects can be built and iterated on faste
   cd [your-domain]      
 ```
 
+## Install app specific modules
+
+All build modules are in the core directory whilst app or site specific modules are in src and can be nested closer to solution app | site dependent on desired level of control.
+
+If you know you have a common batch of modules you use for most apps then you can save on install / maintenance time.
+
+Look for package.json files in 
+
+src/
+src/domain/[your-project]/
+src/domain/[your-project]/[specific-solution]
+
+
+```
+  npm i    
+```
+
+
+
+
 ## Git
 
 ```  
