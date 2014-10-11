@@ -26,7 +26,7 @@ Share frontend development assets so projects can be built and iterated on faste
 
 ```
   cd src/domain     
-  git clone https://github.com/stackmates/it-starts-upfront [your-domain]     
+  git clone https://github.com/stackmates/stackmates.client.project [your-domain]     
   cd [your-domain]      
 ```
 

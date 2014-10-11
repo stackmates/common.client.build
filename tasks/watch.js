@@ -9,6 +9,22 @@ var livereload        = require('gulp-livereload');
 var cfg               = require('../config/gulp');
 
 
+module.exports = function(cfg) {
+
+  gulp.task('watch', ['staticsvr'], function(cb) {
+
+    if (cfg.type.trim() === 'site') {
+      console.log('watching site');
+      runSequence (['build','watchSite'], cb);
+    } else {
+      console.log('watching app');
+      runSequence (['build', 'watchApp'], cb);
+    }
+  });
+
+}
+
+
 // gulp.task('watchApp', ['karma-watch'], function(){  /// TOO SLOW FIGURE OUT PROBLEM
 gulp.task('watchApp', function(){
 
@@ -141,17 +157,3 @@ gulp.task('watchSite', function(){
 });
 
 
-module.exports = function(cfg) {
-
-  gulp.task('watch', ['staticsvr'], function(cb) {
-
-    if (cfg.type.trim() === 'site') {
-      console.log('watching site');
-      runSequence (['build','watchSite'], cb);
-    } else {
-      console.log('watching app');
-      runSequence (['build', 'watchApp'], cb);
-    }
-  });
-
-}

@@ -33,9 +33,13 @@ gulp.task('serve', function () {
   // Watch images
   gulp.watch(cfg.common.images, { maxListeners: 999999 }, ['images', reload]);
   // Watch others assets, pretty fast so grouped
-  gulp.watch(cfg.common.fonts, { maxListeners: 999999 }, ['assets', reload]);
-  gulp.watch(cfg.common.meta, { maxListeners: 999999 }, ['assets', reload]);
-  gulp.watch(cfg.common.icons, { maxListeners: 999999 }, ['assets', reload]);
+  gulp.watch([
+      cfg.uri[cfg.siteBuild].fonts,
+      cfg.uri[cfg.siteBuild].meta,
+      cfg.uri[cfg.siteBuild].icons
+    ],
+    { maxListeners: 999999 },
+    ['assets']);
 
   gulp.watch(cfg.uri[cfg.siteBuild].indexHtml, ['indexHtml', reload]);
 
@@ -50,7 +54,7 @@ gulp.task('serve', function () {
   gulp.watch([
       cfg.common.markdown,
       cfg.common.buildHelpers,
-      cfg.common.buildTemplates
+      cfg.uri[cfg.siteBuild].templates + '**/*'
     ],
     [
       'metalsmith', reload
