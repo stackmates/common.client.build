@@ -15,7 +15,7 @@ module.exports = {
     'node_modules/jquery/dist/jquery.js',
     'node_modules/bower_components/angular/angular.js',
     'node_modules/bower_components/angular-mocks/angular-mocks.js',
-    './src/projects/dreamineering/apps/angular/test/helpers/**/*.js',
+    './src/common/test/helpers/**/*.js',
     'build/test/bundle-tests.js',
   ],
   autoWatch: false,
