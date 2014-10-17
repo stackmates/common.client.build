@@ -32,7 +32,7 @@ module.exports = angular.module('ui.select', [])
 
 .directive('uiSelect', require('./directives/select'))
 .directive('uiSelectChoices', require('./directives/select_choices'))
-.directive('uisTranscludeAppend', require('./directives/tranclude_append'))
+.directive('uisTranscludeAppend', require('./directives/transclude_append'))
 .directive('uiSelectMatch', require('./directives/select_match'))
 
 .filter('highlight', require('./filters/highlight_filter'))

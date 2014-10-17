@@ -1,0 +1,9 @@
+{
+  "name": "sm_transition_end",
+  "version": "0.0.1",
+  "description": "stackmates transition end",
+  "main": "transition_end.js",
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

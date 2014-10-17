@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = /*@ngInject*/
-  function ($scope, $attrs, accordionConfig){
+  function accordionController ($scope, $attrs, accordionConfig){
     // This array keeps track of the accordion groups
     this.groups = [];
 

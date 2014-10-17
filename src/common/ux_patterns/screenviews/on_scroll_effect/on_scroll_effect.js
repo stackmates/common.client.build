@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * cbpScroller.js v1.0.0
  * http://www.codrops.com
@@ -9,10 +11,9 @@
  * http://www.codrops.com
  */
 
-var isTouchDevice = require('is-touch-device');
-var classie = require('classie');
+var isTouchDevice = require('util_modules/is_touch_device_util');
+var classie = require('util_modules/classie_util');
 
-'use strict';
 
 
 var docElem = window.document.documentElement;

@@ -1,0 +1,4 @@
+{
+  "name": "sm.angular.socketio.service",
+  "main": "socket_io"
+}

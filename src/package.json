@@ -28,6 +28,12 @@
     "ionic": {
       "exports": "ionic"
     },
+    "imagesloaded": {
+      "exports": "imagesloaded"
+    },
+    "masonry": {
+      "exports": "masonry"
+    },
     "plugin": {
       "exports": "plugin",
       "depends": [
@@ -48,12 +54,15 @@
     "angular-ui-bootstrap": "./node_modules/bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
     "responsive-nav": "./node_modules/bower_components/responsive-nav/responsive-nav.js",
     "picturefill": "./node_modules/bower_components/picturefill/dist/picturefill.js",
-    "plugin": "./src/js/vendor/jquery-plugin.js"
+    "imagesloaded": "./node_modules/bower_components/imagesloaded/imagesloaded.js",
+    "masonry": "./node_modules/bower_components/masonry/masonry.js"
   },
   "dependencies": {
     "angular-form-for": "^1.2.16",
     "angular-ui-router": "^0.2.11",
+    "angularytics": "^0.3.0",
     "baconjs": "~0.7.6",
+    "brfs": "^1.2.0",
     "center": "git://github.com/npm-dom/center",
     "component-transitionend-property": "git://github.com/npmcomponent/component-transitionend-property",
     "d3": "^3.4.11",
@@ -68,7 +77,8 @@
     "parallaxify": "^0.1.1",
     "querystring": "^0.2.0",
     "restangular": "^1.4.0",
-    "rome": "^1.0.2"
+    "rome": "^1.0.2",
+    "socket.io-client": "^1.1.0"
   },
   "devDependencies": {}
 }

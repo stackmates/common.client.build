@@ -1,5 +1,7 @@
 'use strict';
 
+var debug = require('debug')('slideMenu');
+
 module.exports = /*@ngInject*/
   function SlideMenuService ($rootScope) {
     return {
@@ -21,7 +23,7 @@ module.exports = /*@ngInject*/
          */
       , toggle: function(menuKey) {
           if (this.states.hasOwnProperty(menuKey)) {
-            console.log('menuKey', menuKey);
+
             var menuValue = this.states[menuKey];
             var canToggle = true;
             var key = null
@@ -45,22 +47,14 @@ module.exports = /*@ngInject*/
               } else {
                 this.canPush = menuKey;
               }
-              // Update asm-wrapper on whether it needs pushing aside
-              // console.log(menuKey.substring(4).toLowerCase());
-
-              // this.canPush = (menuKey.substring(0, 4) === 'push' && this.states[menuKey].active)
-              //   ? menuKey.substring(4).toLowerCase() : null;
-              // console.log(this.canPush);
-              // console.log(menuKey + ' active: ' + this.states[menuKey].active);
-              // Emit event
               $rootScope.$emit('slideMenuEvent', null);
             }
             else {
-              console.log('Cannot toggle!');
+              debug('Cannot toggle!');
             }
           }
           else {
-            console.log('Unknown menu!');
+            debug('Unknown menu!');
           }
         }
     };

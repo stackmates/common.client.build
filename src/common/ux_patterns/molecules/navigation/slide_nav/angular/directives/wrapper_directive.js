@@ -8,8 +8,6 @@ module.exports = /*@ngInject*/
       , link: function(scope, element, attrs) {
           // element.addClass('SlideMenu-wrapper SlideMenu--body-closed');
 
-          console.log('something happened');
-
           $rootScope.$on('slideMenuEvent', function() {
             console.log('Body Caught Event: ' + SlideMenuService.canPush);
             switch(SlideMenuService.canPush) {

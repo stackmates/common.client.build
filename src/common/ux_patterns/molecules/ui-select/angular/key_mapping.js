@@ -1,6 +1,7 @@
 'use strict';
 
-module.exports = {
+
+var KEY = {
   TAB: 9,
   ENTER: 13,
   ESC: 27,
@@ -42,3 +43,5 @@ module.exports = {
     return ~[KEY.LEFT,KEY.RIGHT,KEY.BACKSPACE,KEY.DELETE].indexOf(k);
   }
 };
+
+module.exports = KEY;
