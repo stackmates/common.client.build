@@ -21,7 +21,14 @@ module.exports = function(cfg) {
 
     var testFiles = glob.sync(cfg.uri[cfg.siteBuild].browserifySpecs);
 
-    var bundleStream = browserify(testFiles).bundle({debug: true});
+    var bundleStream = browserify({
+      entries: testFiles,
+      extensions: ['.js', '.coffee'],
+      paths: ['./node_modules','./src/common/']
+    })
+    .bundle({debug: true});
+
+
     return bundleStream
       .pipe(source('bundle-tests.js'))
       .pipe(gulp.dest('build/test'));

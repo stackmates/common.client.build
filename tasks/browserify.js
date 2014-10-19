@@ -81,44 +81,6 @@ function browserifyBundle () {
 
   return bundle();
 
-  // TODO get this working with latest browserify
-  // var bundler = browserify({
-  //   // Required watchify args
-  //   cache: {}, packageCache: {}, fullPaths: true,
-  //   // Specify the entry point of your app
-  //   entries: entryPoint,
-  //   // Add file extentions to make optional in your requires
-  //   extensions: ['.coffee', '.js'],
-  //   // Enable source maps!
-  //   debug: true
-  // });
-
-  // var bundle = function() {
-  //   // Log when bundling starts
-  //   bundleLogger.start();
-
-  //   return bundler
-  //     .bundle({debug:true})
-  //     // Report compile errors
-  //     .on('error', handleErrors)
-  //     // Use vinyl-source-stream to make the
-  //     // stream gulp compatible. Specifiy the
-  //     // desired output filename here.
-  //     .pipe(source('app.js'))
-  //     // Specify the output destination
-  //     .pipe(gulp.dest('build/assets/js'))
-  //     // Log when bundling completes!
-  //     .on('end', bundleLogger.end);
-  // };
-
-  // if(cfg.watch) {
-  //   bundler = watchify(bundler);
-  //   // Rebundle with watchify on changes.
-  //   bundler.on('update', bundle);
-  // }
-
-  // return bundle();
-
 };
 
 

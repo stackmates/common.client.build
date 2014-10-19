@@ -2,7 +2,7 @@
 // transitionend http://davidwalsh.name/css-animation-callback
 
 var dom = require('domquery');
-var transitionend = require('component-transitionend-property');
+var transitionend = require('util_modules/transition_end');
 
 var classie = require('util_modules/classie_util');
 

@@ -7,11 +7,11 @@ module.exports = angular.module('sm.molecules.typeahead', [
  require('ux_patterns/_helpers/angular/position').name
 ])
 
-.factory('typeaheadParser',   require('./services/typeahead_parser_service'))
+.factory('typeaheadParser',   require('./services/typeahead_parser'))
 
-.directive('typeahead',       require('./directives/typeahead_directive'))
-.directive('typeaheadMatch',  require('./directives/typeahead_match_directive'))
-.directive('typeaheadPopup',  require('./directives/typeahead_popup_directive'))
+.directive('typeahead',       require('./directives/typeahead'))
+.directive('typeaheadMatch',  require('./directives/typeahead_match'))
+.directive('typeaheadPopup',  require('./directives/typeahead_popup'))
 
 .filter('typeaheadHighlight', require('./filters/typeahead_highlight'))
 
