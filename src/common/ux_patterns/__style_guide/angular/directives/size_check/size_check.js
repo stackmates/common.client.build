@@ -13,7 +13,6 @@ module.exports = angular.module('app.evolving.components.sizecheck', [
       require: 'ngModel',
       link: link
     };
-
   }
 )
 

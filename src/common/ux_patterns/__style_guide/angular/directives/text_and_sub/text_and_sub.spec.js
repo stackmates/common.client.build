@@ -1,8 +1,6 @@
 'use strict';
 
-
-require('../');
-// require('../services/desserts_service');
+require('./text_and_sub');
 
 // template based spec
 describe('textAndSub', function () {
@@ -16,7 +14,7 @@ describe('textAndSub', function () {
 
   beforeEach(function(){
     angular.mock.module(
-      'app.evolvingpractices.directives'
+      'app.evolving.components.textandsub'
     );
 
     inject(function ($injector) {
