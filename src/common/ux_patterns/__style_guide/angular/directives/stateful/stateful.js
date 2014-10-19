@@ -1,6 +1,11 @@
+'use strict';
 
+module.exports = angular.module('app.evolving.components.stateful', [
+  require('../../services').name
+])
 
-module.exports = /*@ngInject*/
+.directive('stateful',
+  /*@ngInject*/
   function stateful (DessertLog){
     'use strict';
     return {
@@ -28,3 +33,4 @@ module.exports = /*@ngInject*/
       }
     };
   }
+)

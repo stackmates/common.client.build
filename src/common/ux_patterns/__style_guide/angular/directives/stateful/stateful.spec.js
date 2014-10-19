@@ -1,22 +1,19 @@
 'use strict';
 
-
-require('./stateful_directive');
-require('../services');
+require('./stateful');
 
 describe('stateful', function () {
   var $rootScope,
       $scope,
       $compile,
       el,
-             dessertLog,
+      dessertLog,
       $body = $('body'),
       simpleHtml = '<button stateful="red"></button>';
 
   beforeEach(function () {
 
-    //angular.mock.module('drmg');
-    angular.mock.module('app.evolvingpractices.directives');
+    angular.mock.module('app.evolving.components.stateful');
 
     inject(function ($injector) {
       dessertLog = $injector.get('DessertLog');
