@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = angular.module( 'app.evolvingpractices', [
+module.exports = angular.module( 'app.evolving', [
   'ui.router',
   'restangular',
   require('./services').name,
@@ -11,20 +11,20 @@ module.exports = angular.module( 'app.evolvingpractices', [
 .config(
   function($stateProvider) {
     $stateProvider
-      .state('app.evolvingpractices', {
-        url: '/evolving-practices',
+      .state('app.evolving', {
+        url: '/evolving',
         views: {
           '@': {
             controller: 'DessertController',
-            templateUrl: 'evolving_practices/templates/test_practices.html'
+            template: require('./templates/evolving.html')
           }
         }
       });
   }
 )
 
-.controller( 'DessertController', require('./controllers/dessert_controller'))
-.controller( 'TableController', require('./controllers/table_controller'))
+.controller( 'DessertController',  require('./controllers/dessert_controller'))
+.controller( 'TableController',    require('./controllers/table_controller'))
 // this controller in nested with TableController in the DOM
 .controller( 'PlaceMatController', require('./controllers/placemate_controller'))
 

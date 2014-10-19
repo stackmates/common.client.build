@@ -1,6 +1,6 @@
 'use strict';
 
-require('../../index');
+require('../');
 
 describe('DessertController', function () {
   var $rootScope,

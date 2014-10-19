@@ -1,5 +1,11 @@
+'use strict';
+
+var multiline = require('multiline');
+
+module.exports = multiline(function(){/*
 <span class="text-and-sub">
   <h3 ng-bind="text"></h3>
   <h5 ng-bind="sub"
       ng-show="sub"></h5>
 </span>
+*/});

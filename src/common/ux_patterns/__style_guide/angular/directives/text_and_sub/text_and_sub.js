@@ -4,7 +4,8 @@ module.exports = /*@ngInject*/
     'use strict';
     return {
       restrict: 'E',
-      templateUrl: 'evolving_practices/templates/text-and-sub.html',
+      template: require('./text_and_sub.html.js'),
+      // templateUrl: 'evolving_practices/templates/text-and-sub.html',
       scope: {
         text: '@',
         sub: '@'

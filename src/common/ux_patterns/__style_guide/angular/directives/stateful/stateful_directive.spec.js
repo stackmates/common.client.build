@@ -3,7 +3,6 @@
 
 require('./stateful_directive');
 require('../services');
-require('../../templates/templates');
 
 describe('stateful', function () {
   var $rootScope,

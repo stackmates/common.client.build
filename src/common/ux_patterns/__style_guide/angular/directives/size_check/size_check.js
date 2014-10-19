@@ -1,6 +1,10 @@
+'use strict';
 
+module.exports = angular.module('app.evolving.components.sizecheck', [
+])
 
-module.exports = /*@ngInject*/
+.directive('sizeCheck',
+  /*@ngInject*/
   function sizeCheck (){
     'use strict';
     return {
@@ -11,7 +15,7 @@ module.exports = /*@ngInject*/
     };
 
   }
-
+)
 
 function link (scope, element, attrs, ngModelController) {
   ngModelController.$parsers.push(function(val) {

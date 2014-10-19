@@ -1,6 +1,6 @@
 'use strict';
 
-require('../../index');
+require('../');
 
 
 describe('TableControllerCallingRemoveServiceExample', function () {

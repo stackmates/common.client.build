@@ -1,9 +1,8 @@
 'use strict';
 
 
-require('./text_and_sub_directive');
+require('../');
 // require('../services/desserts_service');
-require('../../templates/templates');
 
 // template based spec
 describe('textAndSub', function () {
@@ -17,8 +16,7 @@ describe('textAndSub', function () {
 
   beforeEach(function(){
     angular.mock.module(
-      'app.evolvingpractices.directives',
-      'app.templates'
+      'app.evolvingpractices.directives'
     );
 
     inject(function ($injector) {

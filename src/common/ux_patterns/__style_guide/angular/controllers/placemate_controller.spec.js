@@ -1,6 +1,6 @@
 'use strict';
 
-require('../evolving_practices');
+require('../');
 
 // Example of a controller nested inside another controller
 // that uses a function inherited from the parent scope

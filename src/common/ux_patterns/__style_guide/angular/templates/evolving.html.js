@@ -1,3 +1,8 @@
+'use strict';
+
+var multiline = require('multiline');
+
+module.exports = multiline(function(){/*
 <div class='l-content-container'>
 
   <div class='l-content content content--{{$state.current.name}}' role='main'>
@@ -39,5 +44,5 @@
     </section>
 
   </div>
-
 </div>
+*/});

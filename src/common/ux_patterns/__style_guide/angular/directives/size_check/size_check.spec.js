@@ -1,10 +1,6 @@
 'use strict';
 
-
-require('./size_check_directive');
-// require('../services/desserts_service');
-require('../../templates/templates');
-
+require('./size_check');
 
 describe('sizeCheck', function () {
   var $rootScope,
@@ -16,7 +12,7 @@ describe('sizeCheck', function () {
   beforeEach(function() {
 
     //angular.mock.module('drmg');
-    angular.mock.module('app.evolvingpractices.directives');
+    angular.mock.module('app.evolving.components.sizecheck');
 
     inject(function ($injector, $compile) {
       $rootScope = $injector.get('$rootScope');
