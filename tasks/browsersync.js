@@ -9,7 +9,7 @@ var reload      = browserSync.reload;
 var cfg  = require('../config/gulp');
 
 // Watch Files For Changes & Reload
-gulp.task('serve', function () {
+gulp.task('serve', ['scriptsAngular'],  function () {
   browserSync({
     notify: false,
     // Run as an https by uncommenting 'https: true'
@@ -24,7 +24,11 @@ gulp.task('serve', function () {
   // gulp.watch('build/assets/js/**').on('change', function(file) {
   //       server.changed(file.path);
   // watch for browserify change app.js
-  gulp.watch('./build/assets/js/**', { maxListeners: 999999 }, [reload ]);
+  gulp.watch(
+    cfg.uri[cfg.siteBuild].watchJS,
+    { maxListeners: 999999 },
+    ['browserifyAngular', reload]
+  );
 
   // Watch for new styles
   gulp.watch(cfg.common.styles, { maxListeners: 999999 }, ['styles', reload ]);
