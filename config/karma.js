@@ -1,7 +1,7 @@
 
 
 var cfg = require('../config/gulp');
-var testHelpers      = cfg.uri[cfg.siteBuild].testHelpers;
+var testFiles        = cfg.uri[cfg.siteBuild].karmaTestFiles;
 var templates        = cfg.uri[cfg.siteBuild].templatesHtmlIn;
 
 
@@ -15,8 +15,8 @@ module.exports = {
     'node_modules/jquery/dist/jquery.js',
     'node_modules/bower_components/angular/angular.js',
     'node_modules/bower_components/angular-mocks/angular-mocks.js',
-    './src/common/test/helpers/**/*.js',
-    'build/test/bundle-tests.js',
+    './test/helpers/**/*.js',
+    'test/build/bundle-tests.js'
   ],
   autoWatch: false,
   singleRun: false,

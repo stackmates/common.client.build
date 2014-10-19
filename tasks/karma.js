@@ -31,7 +31,7 @@ module.exports = function(cfg) {
 
     return bundleStream
       .pipe(source('bundle-tests.js'))
-      .pipe(gulp.dest('build/test'));
+      .pipe(gulp.dest('test/build'));
   });
 
 
