@@ -14,4 +14,13 @@ module.exports = function(cfg){
     del.bind(null, [ wwwDir, 'build', 'content' ])
   );
 
+  gulp.task('cleanTests',
+    del.bind(null, [ 'test/build' ])
+  );
+
+
+
 };
+
+
+

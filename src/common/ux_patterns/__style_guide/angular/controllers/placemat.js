@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = angular.module('app.evolving.controller.placemat', [
-  require('./table').name
+  require('./spy_on_service').name
 ])
 
 .controller( 'PlacematController',

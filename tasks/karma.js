@@ -17,7 +17,7 @@ module.exports = function(cfg) {
 
   // use browserify to make one big test file then run karma on that
   // full credit to gah-boh; https://github.com/xdissent/karma-browserify/issues/38
-  gulp.task('browserifySpecs', function() {
+  gulp.task('browserifySpecs', ['cleanTests'], function() {
 
     var testFiles = glob.sync(cfg.uri[cfg.siteBuild].browserifySpecs);
 

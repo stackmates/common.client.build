@@ -1,14 +1,13 @@
 'use strict';
 
-require('./table');
+require('./spy_on_service');
 
 
-describe('TableControllerCallingRemoveServiceExample', function () {
+describe('Controller: CallingRemoveServiceExample', function () {
   var $rootScope,
       $scope,
       dessertServiceSpy,
-      controller,
-      Restangular;
+      controller;
 
   beforeEach(function() {
 
