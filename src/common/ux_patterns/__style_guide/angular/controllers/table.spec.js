@@ -1,17 +1,18 @@
 'use strict';
 
-require('../');
+require('./table');
 
 
 describe('TableControllerCallingRemoveServiceExample', function () {
   var $rootScope,
       $scope,
       dessertServiceSpy,
-      controller;
+      controller,
+      Restangular;
 
   beforeEach(function() {
 
-    angular.mock.module('app');
+    angular.mock.module('app.evolving.controller.table');
 
     inject(function($injector){
       $rootScope = $injector.get('$rootScope');

@@ -5,9 +5,9 @@ module.exports = angular.module( 'app.evolving', [
   'restangular',
   require('./services').name,
   require('./directives').name,
+  require('./controllers/dessert').name
 ])
 
-  // require('./directives/directives').name
 .config(
   function($stateProvider) {
     $stateProvider
@@ -22,12 +22,6 @@ module.exports = angular.module( 'app.evolving', [
       });
   }
 )
-
-.controller( 'DessertController',  require('./controllers/dessert_controller'))
-.controller( 'TableController',    require('./controllers/table_controller'))
-// this controller in nested with TableController in the DOM
-.controller( 'PlaceMatController', require('./controllers/placemate_controller'))
-
 
 ;
 

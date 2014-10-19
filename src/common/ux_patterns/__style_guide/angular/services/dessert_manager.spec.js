@@ -8,7 +8,7 @@ describe('DessertManager', function () {
   var values, factory;
 
   beforeEach(function() {
-    angular.mock.module('app.evolvingpractices.services');
+    angular.mock.module('app.evolving.services');
 
     inject(function ($injector) {
       values = $injector.get('DessertValues');

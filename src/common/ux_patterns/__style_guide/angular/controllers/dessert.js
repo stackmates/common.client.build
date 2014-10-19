@@ -1,6 +1,11 @@
 'use strict';
 
-module.exports = /*@ngInject*/
+module.exports = angular.module('app.evolving.controller.dessert', [
+  require('../services').name
+])
+
+.controller( 'DessertController',
+  /*@ngInject*/
   function DessertController( $scope, DessertManager ) {
 
     // Listeners
@@ -58,4 +63,4 @@ module.exports = /*@ngInject*/
     $scope.slices = 8;
 
   }
-
+)

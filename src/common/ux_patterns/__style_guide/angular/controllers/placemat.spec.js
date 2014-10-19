@@ -1,10 +1,10 @@
 'use strict';
 
-require('../');
+require('./placemat');
 
 // Example of a controller nested inside another controller
 // that uses a function inherited from the parent scope
-describe('PlaceMatController', function () {
+describe('PlacematController', function () {
   var $rootScope,
       $scope,
       // create a controller service
@@ -13,7 +13,7 @@ describe('PlaceMatController', function () {
 
   beforeEach(function() {
 
-    angular.mock.module('app.evolvingpractices');
+    angular.mock.module('app.evolving.controller.placemat');
 
     inject(function($injector){
       $rootScope = $injector.get('$rootScope');
@@ -24,7 +24,7 @@ describe('PlaceMatController', function () {
       // then create a new scope from the parent controller scope
       // replicating the angular inheritance pattern
       $scope = $scope.$new();
-      controller = $controller("PlaceMatController", {$scope: $scope });
+      controller = $controller("PlacematController", {$scope: $scope });
     });
 
   });

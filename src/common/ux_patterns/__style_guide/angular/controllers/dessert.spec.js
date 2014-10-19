@@ -1,6 +1,6 @@
 'use strict';
 
-require('../');
+require('./dessert');
 
 describe('DessertController', function () {
   var $rootScope,
@@ -10,7 +10,7 @@ describe('DessertController', function () {
 
   beforeEach(function(){
 
-    angular.mock.module('app.evolvingpractices');
+    angular.mock.module('app.evolving.controller.dessert');
 
     inject(function($injector){
       $rootScope = $injector.get('$rootScope');
