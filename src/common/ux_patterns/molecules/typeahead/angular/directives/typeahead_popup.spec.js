@@ -2,9 +2,9 @@ describe('typeaheadPopup - result rendering', function () {
 
   var scope, $rootScope, $compile;
 
-  beforeEach(module('ui.bootstrap.typeahead'));
-  beforeEach(module('template/typeahead/typeahead-popup.html'));
-  beforeEach(module('template/typeahead/typeahead-match.html'));
+  beforeEach(angular.mock.module('sm.molecules.typeahead'));
+  // beforeEach(module('template/typeahead/typeahead-popup.html'));
+  // beforeEach(module('template/typeahead/typeahead-match.html'));
   beforeEach(inject(function (_$rootScope_, _$compile_) {
     $rootScope = _$rootScope_;
     scope = $rootScope.$new();

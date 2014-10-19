@@ -2,7 +2,7 @@ describe('typeaheadHighlight', function () {
 
   var highlightFilter;
 
-  beforeEach(module('ui.bootstrap.typeahead'));
+  beforeEach(angular.mock.module('sm.molecules.typeahead'));
   beforeEach(inject(function (typeaheadHighlightFilter) {
     highlightFilter = typeaheadHighlightFilter;
   }));

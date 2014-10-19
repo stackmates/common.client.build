@@ -3,9 +3,9 @@
 
 
 module.exports = {
-  // browserifySpecs         : './src/common/ux_patterns/molecules/typeahead/angular/**/*.spec.js',
-  // browserifySpecs         : './src/common/ux_patterns/__style_guide/angular/**/*.spec.js',
-  browserifySpecs : './src/common/ux_patterns/__style_guide/angular/**/*.spec.js',
+  browserifySpecs : './src/common/ux_patterns/molecules/typeahead/angular/**/*.spec.js',
+  // browserifySpecs : './src/common/ux_patterns/__style_guide/angular/**/*.spec.js',
+  // browserifySpecs : './src/common/ux_patterns/__style_guide/angular/**/*.spec.js',
   // browserifySpecs : './src/common/ux_patterns/__style_guide/angular/services/**/*.spec.js',
   // browserifySpecs : './src/common/ux_patterns/__style_guide/angular/controllers/**/*.spec.js',
   // browserifySpecs : './src/common/ux_patterns/__style_guide/angular/directives/**/*.spec.js',

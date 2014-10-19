@@ -21,6 +21,11 @@ gulp.task('serve', function () {
     }
   });
 
+  // gulp.watch('build/assets/js/**').on('change', function(file) {
+  //       server.changed(file.path);
+  // watch for browserify change app.js
+  gulp.watch('./build/assets/js/**', { maxListeners: 999999 }, [reload ]);
+
   // Watch for new styles
   gulp.watch(cfg.common.styles, { maxListeners: 999999 }, ['styles', reload ]);
 

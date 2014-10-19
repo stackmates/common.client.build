@@ -1,16 +1,20 @@
 
+// angular.mock
+// http://stackoverflow.com/questions/20968320/angular-mock-module-resulting-in-object-object-is-not-a-function
+// https://github.com/xdissent/karma-browserify/issues/10
 
-require('../index');
+
+require('../');
 
 describe('typeahead tests', function () {
 
   var $scope, $compile, $document, $timeout;
   var changeInputValueTo;
 
-  beforeEach(module('sm.molecules.typeahead'));
-  beforeEach(module('template/typeahead/typeahead-popup.html'));
-  beforeEach(module('template/typeahead/typeahead-match.html'));
-  beforeEach(module(function($compileProvider) {
+  beforeEach(angular.mock.module('sm.molecules.typeahead'));
+  // beforeEach(angular.mock.module('template/typeahead/typeahead-popup.html'));
+  // beforeEach(angular.mock.module('template/typeahead/typeahead-match.html'));
+  beforeEach(angular.mock.module(function($compileProvider) {
     $compileProvider.directive('formatter', function () {
       return {
         require: 'ngModel',
