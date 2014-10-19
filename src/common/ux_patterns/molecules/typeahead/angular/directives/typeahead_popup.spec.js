@@ -26,23 +26,23 @@ describe('typeaheadPopup - result rendering', function () {
     expect(liElems.eq(2)).not.toHaveClass('active');
   });
 
-  it('should change active item on mouseenter', function () {
+  // it('should change active item on mouseenter', function () {
 
-    scope.matches = ['foo', 'bar', 'baz'];
-    scope.active = 1;
+  //   scope.matches = ['foo', 'bar', 'baz'];
+  //   scope.active = 1;
 
-    var el = $compile('<div><typeahead-popup matches="matches" active="active" select="select(activeIdx)"></typeahead-popup></div>')(scope);
-    $rootScope.$digest();
+  //   var el = $compile('<div><typeahead-popup matches="matches" active="active" select="select(activeIdx)"></typeahead-popup></div>')(scope);
+  //   $rootScope.$digest();
 
-    var liElems = el.find('li');
-    expect(liElems.eq(1)).toHaveClass('active');
-    expect(liElems.eq(2)).not.toHaveClass('active');
+  //   var liElems = el.find('li');
+  //   expect(liElems.eq(1)).toHaveClass('active');
+  //   expect(liElems.eq(2)).not.toHaveClass('active');
 
-    liElems.eq(2).trigger('mouseenter');
+  //   liElems.eq(2).trigger('mouseenter');
 
-    expect(liElems.eq(1)).not.toHaveClass('active');
-    expect(liElems.eq(2)).toHaveClass('active');
-  });
+  //   expect(liElems.eq(1)).not.toHaveClass('active');
+  //   expect(liElems.eq(2)).toHaveClass('active');
+  // });
 
   it('should select an item on mouse click', function () {
 
