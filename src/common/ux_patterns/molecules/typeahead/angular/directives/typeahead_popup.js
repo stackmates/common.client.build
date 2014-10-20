@@ -14,8 +14,7 @@ module.exports = /*@ngInject*/
         select:'&'
       },
       replace:true,
-      // templateUrl:'typeahead-popup.html',
-      template: require('../templates/typeahead-popup.html.js'),
+      templateUrl: 'typeahead-popup.html',
       link:function (scope, element, attrs) {
 
         scope.templateUrl = attrs.templateUrl;

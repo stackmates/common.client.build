@@ -4,7 +4,7 @@
 module.exports = angular.module('sm.molecules.typeahead', [
  require('ux_patterns/_helpers/angular/bind_html').name,
  require('ux_patterns/_helpers/angular/position').name,
- require('./templates/converted/typeahead-match.html').name
+ // require('./templates/converted/typeahead-match.html').name
 ])
 
 .factory('typeaheadParser',   require('./services/typeahead_parser'))

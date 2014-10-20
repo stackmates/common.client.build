@@ -8,6 +8,7 @@ content/
 ghpages/
 undefined/
 _sandbox/
+_sandbox
 
 
 config/gulp.js

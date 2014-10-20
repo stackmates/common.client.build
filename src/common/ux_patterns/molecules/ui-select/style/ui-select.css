@@ -6,9 +6,11 @@
  */
 
 
+
 /* Style when highlighting a search. */
 .ui-select-highlight {
   font-weight: bold;
+  background-color:  var(--uiselect-highlightBgColor);
 }
 
 .ui-select-offscreen {

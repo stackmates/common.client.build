@@ -111,7 +111,7 @@ html[dir="rtl"] .select2-container .select2-choice > .select2-chosen {
     text-decoration: none;
 
     border: 0;
-    background: url('select2.png') right top no-repeat;
+    background: url('../img/select2.png') right top no-repeat;
     cursor: pointer;
     outline: 0;
 }
@@ -358,7 +358,8 @@ html[dir="rtl"] .select2-dropdown-open .select2-choice .select2-arrow b {
 
 /* results */
 .select2-results {
-    max-height: 200px;
+    /*max-height: var(--uiselect-resultsHeight);*/
+    height: 200px;
     padding: 0 0 0 4px;
     margin: 4px 4px 4px 0;
     position: relative;

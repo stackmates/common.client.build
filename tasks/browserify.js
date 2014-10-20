@@ -89,7 +89,7 @@ gulp.task('scriptsAngular', ['browserifyAngular'],  function () {
   return gulp.src('./build/assets/js/app.js')
     .pipe(gif(cfg.env === 'production', rename({suffix: '.min'})))
     .pipe(gif(cfg.env === 'production', ngAnnotate()))
-    .pipe(gif(cfg.env === 'production', uglify()))
+    .pipe(gif(cfg.env === 'production', uglify({preserveComments: 'some'})))
     .pipe(gif(cfg.env === 'production', gulp.dest(wwwDir + '/www/assets/js')))
   // body...
 })
