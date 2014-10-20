@@ -62,14 +62,14 @@ gulp.task('watchApp', function(){
     // Watch images
     gulp.watch(cfg.uri[cfg.siteBuild].images, { maxListeners: 999999 }, ['images']);
 
-    // Watch others assets, pretty fast so grouped
-    gulp.watch([
-        cfg.uri[cfg.siteBuild].fonts,
-        cfg.uri[cfg.siteBuild].meta,
-        cfg.uri[cfg.siteBuild].icons
-      ],
-      { maxListeners: 999999 },
-      ['assets']);
+    // ACTUALLY NO NEED FOR THIS AS NEED TO RESTART TO LOAD EDIT
+    // gulp.watch([
+    //     cfg.uri[cfg.siteBuild].fonts,
+    //     cfg.uri[cfg.siteBuild].meta,
+    //     cfg.uri[cfg.siteBuild].icons
+    //   ],
+    //   { maxListeners: 999999 },
+    //   ['assets']);
 
     gulp.watch(cfg.uri[cfg.siteBuild].indexHtml, ['indexHtml']);
 

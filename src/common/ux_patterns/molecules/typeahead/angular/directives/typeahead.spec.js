@@ -678,4 +678,27 @@ describe('typeahead tests', function () {
     });
   });
 
+
+  describe('nested typeahead features', function() {
+
+    describe('list filtering', function() {
+
+    });
+
+    describe('text filter', function() {
+
+    });
+
+    describe('navigation', function() {
+
+    });
+
+    describe('scroll behaviour', function() {
+
+    });
+
+  });
+
+
+
 });

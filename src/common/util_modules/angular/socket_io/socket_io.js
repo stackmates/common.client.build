@@ -2,6 +2,7 @@
 
 var io = require('socket.io-client');
 
+
 module.exports = angular.module('sm.socket.io', [
 ])
 
@@ -102,4 +103,6 @@ module.exports = angular.module('sm.socket.io', [
 ;
 
 
+// Useful references
 
+// see http://code.tutsplus.com/tutorials/more-responsive-single-page-applications-with-angularjs-socketio-creating-the-library--cms-21738

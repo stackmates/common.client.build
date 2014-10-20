@@ -1,7 +1,7 @@
 
 'use strict';
 
-var app = require('./transition_service');
+require('./transition_service');
 
 describe('$transition', function() {
 
@@ -18,7 +18,7 @@ describe('$transition', function() {
 
   var $transition, $timeout;
 
-  beforeEach(angular.mock.module('common.directives.transition'));
+  beforeEach(angular.mock.module('sm.micro.transition'));
 
   beforeEach(inject(function(_$transition_, _$timeout_) {
     $transition = _$transition_;
