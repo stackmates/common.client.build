@@ -4,6 +4,8 @@ var gulp              = require('gulp');
 var gif               = require('gulp-if');
 var runSequence       = require('run-sequence');
 
+var watch             = require('gulp-watch');
+
 var livereload        = require('gulp-livereload');
 
 var cfg               = require('../config/gulp');

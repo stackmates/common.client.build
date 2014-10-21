@@ -17,6 +17,12 @@ var browserify      = require('browserify');
 var watchify        = require('watchify');
 var browserifyShim  = require('browserify-shim');
 
+// load transforms
+var brfs            = require('brfs');
+var hbsfy           = require('hbsfy');
+var famousify       = require('famousify');
+var coffeeify       = require('coffeeify');
+
 // Minify your browserify bundles without losing the sourcemap
 var minifyify       = require('minifyify');
 
@@ -41,18 +47,49 @@ var entryPoint       = cfg.uri[cfg.siteBuild].browserifyEntry;
 // template where needed
 
 
+// var gulp = require('gulp');
+// var gutil = require('gulp-util');
+// var source = require('vinyl-source-stream');
+// var watchify = require('watchify');
+// var browserify = require('browserify');
+
+// gulp.task('watch', function() {
+//   var bundler = watchify(browserify('src/index.js', watchify.args));
+
+//   // Optionally, you can apply transforms
+//   // and other configuration options on the
+//   // bundler just as you would with browserify
+//   bundler.transform('brfs');
+
+//   bundler.on('update', rebundle);
+
+//   function rebundle() {
+//     return bundler.bundle()
+//       // log errors if they happen
+//       .on('error', gutil.log.bind(gutil, 'Browserify Error'))
+//       .pipe(source('bundle.js'))
+//       .pipe(gulp.dest('./dist'));
+//   }
+
+//   return rebundle();
+// });
+
 function browserifyBundle () {
 
   var bundleMethod = cfg.watch ? watchify : browserify;
   // var bundleMethod = browserify;
 
   var bundler = bundleMethod({
+    // Required watchify args
+    cache: {}, packageCache: {}, fullPaths: true,
     // Specify the entry point of your app
     entries: entryPoint,
     // Add file extentions to make optional in your requires
-    extensions: ['.js', '.coffee'],
+    extensions: ['.js', '.coffee', 'html'],
     paths: ['./node_modules','./src/common/']
   });
+
+  bundler.transform('brfs');
 
   var bundle = function() {
     // Log when bundling starts
@@ -68,6 +105,7 @@ function browserifyBundle () {
       // Use vinyl-source-stream to make the
       // stream gulp compatible. Specifiy the
       // desired output filename here.
+      // .pipe(brfs())
       .pipe(source('app.js'))
       .pipe(gulp.dest('build/assets/js'))
       // Log when bundling completes!
