@@ -18,12 +18,8 @@
     "ionic": "driftyco/ionic-bower#1.0.0-beta.5",
     "picturefill": "~2.1.0",
     "imagesloaded": "~3.1.8",
-    "angular-debaser": "~0.3.1",
-    "angular-translate": "~2.2.0",
-    "angular-scroll-watch": "~0.5.2",
     "masonry": "~3.1.5",
-    "headroom.js": "~0.7.0",
-    "angular-leaflet-directive": "~0.7.8",
-    "es5-shim": "2.1.0"
+    "es5-shim": "2.1.0",
+    "lazysizes": "~0.2.0"
   }
 }
