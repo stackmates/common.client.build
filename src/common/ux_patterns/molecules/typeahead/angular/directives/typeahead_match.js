@@ -1,5 +1,7 @@
 'use strict';
 
+var fs = require('fs');
+
 var _o;
 
 module.exports = /*@ngInject*/
@@ -11,7 +13,7 @@ module.exports = /*@ngInject*/
         match:'=',
         query:'='
       },
-      // template: require('../templates/typeahead-match.html.js'),
+      // template: template: fs.readFileSync('ux_patterns/molecules/typeahead-match.html')
       templateUrl: 'typeahead-match.html',
       link:function (scope, element, attrs) {
         var tplUrl = $parse(attrs.templateUrl)(scope.$parent) || 'typeahead-match.html';
