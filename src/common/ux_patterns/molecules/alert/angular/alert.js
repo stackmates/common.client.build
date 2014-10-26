@@ -1,5 +1,7 @@
 'use strict';
 
+var fs = require('fs');
+
 module.exports = angular.module('sm.molecules.alert', [])
 
 .controller('AlertController', ['$scope', '$attrs', function ($scope, $attrs) {
@@ -10,7 +12,7 @@ module.exports = angular.module('sm.molecules.alert', [])
   return {
     restrict:'EA',
     controller:'AlertController',
-    templateUrl:'alert.html',
+    template: fs.readFileSync(__dirname + '/templates/alert.html', 'utf8'),
     transclude:true,
     replace:true,
     scope: {

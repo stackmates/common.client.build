@@ -53,9 +53,10 @@
     "angular-ui-select": "./node_modules/bower_components/angular-ui-select/dist/select.js",
     "ionic": "./node_modules/bower_components/ionic/js/ionic.js",
     "ionic-angular": "./node_modules/bower_components/ionic/js/ionic-angular.js",
-    "picturefill": "./node_modules/bower_components/picturefill/dist/picturefill.js",
+    "kiwi": "./node_modules/bower_components/kiwijs/build/kiwi.js",
     "imagesloaded": "./node_modules/bower_components/imagesloaded/imagesloaded.js",
-    "masonry": "./node_modules/bower_components/masonry/masonry.js"
+    "masonry": "./node_modules/bower_components/masonry/masonry.js",
+    "picturefill": "./node_modules/bower_components/picturefill/dist/picturefill.js"
   },
   "dependencies": {
     "angular-form-for": "^1.2.16",

@@ -1,5 +1,7 @@
 'use strict';
 
+var fs = require('fs');
+
 module.exports = /*@ngInject*/
   function progress () {
     return {
@@ -9,6 +11,6 @@ module.exports = /*@ngInject*/
       controller: 'ProgressController',
       require: 'progress',
       scope: {},
-      templateUrl: 'progress.html'
+      template: fs.readFileSync(__dirname + '/templates/progress.html', 'utf8')
     };
   }

@@ -1,5 +1,7 @@
 'use strict';
 
+var fs = require('fs');
+
 module.exports = /*@ngInject*/
   function rating () {
     return {
@@ -11,7 +13,8 @@ module.exports = /*@ngInject*/
         onLeave: '&'
       },
       controller: 'RatingController',
-      templateUrl: 'rating.html',
+      template: fs.readFileSync(__dirname + '/templates/rating.html', 'utf8'),
+      // templateUrl: 'rating.html',
       replace: true,
       link: function(scope, element, attrs, ctrls) {
         var ratingCtrl = ctrls[0], ngModelCtrl = ctrls[1];

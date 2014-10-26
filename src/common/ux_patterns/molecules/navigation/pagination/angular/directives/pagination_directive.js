@@ -1,5 +1,6 @@
 'use strict';
 
+var fs = require('fs');
 
 module.exports = /*@ngInject*/
   function pagination ($parse, paginationConfig) {
@@ -14,11 +15,10 @@ module.exports = /*@ngInject*/
       },
       require: ['pagination', '?ngModel'],
       controller: 'PaginationController',
-      templateUrl: 'pagination.html',
+      template: fs.readFileSync(__dirname + '/templates/pagination.html', 'utf8'),
       replace: true,
       link: function(scope, element, attrs, ctrls) {
         var paginationCtrl = ctrls[0], ngModelCtrl = ctrls[1];
-
         if (!ngModelCtrl) {
            return; // do nothing if no ng-model
         }

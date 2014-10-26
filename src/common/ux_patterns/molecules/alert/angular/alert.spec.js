@@ -7,7 +7,7 @@ describe('alert', function () {
   var element;
 
   beforeEach(angular.mock.module('sm.molecules.alert'));
-  beforeEach(module('alert.html'));
+  // beforeEach(module('alert.html'));
 
   beforeEach(inject(function ($rootScope, _$compile_) {
 

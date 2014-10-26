@@ -1,12 +1,13 @@
 'use strict';
 
+var fs = require('fs');
 
 module.exports = /*@ngInject*/
   function monthPicker (dateFilter) {
     return {
       restrict: 'EA',
       replace: true,
-      templateUrl: 'month.html',
+      template: fs.readFileSync(__dirname + '/templates/month.html', 'utf8'),
       require: '^datepicker',
       link: function(scope, element, attrs, ctrl) {
         ctrl.step = { years: 1 };

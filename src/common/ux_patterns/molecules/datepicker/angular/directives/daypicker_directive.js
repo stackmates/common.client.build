@@ -1,12 +1,13 @@
 'use strict';
 
+var fs = require('fs');
 
 module.exports = /*@ngInject*/
   function dayPicker (dateFilter) {
     return {
       restrict: 'EA',
       replace: true,
-      templateUrl: 'day.html',
+      template: fs.readFileSync(__dirname + '/templates/day.html', 'utf8'),
       require: '^datepicker',
       link: function(scope, element, attrs, ctrl) {
         scope.showWeeks = ctrl.showWeeks;

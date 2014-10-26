@@ -2,7 +2,8 @@
 
 
 module.exports = angular.module('sm.molecules.modal', [
-  require('ux_patterns/_helpers/angular/transition').name
+  require('ux_patterns/_helpers/angular/transition').name,
+  require('./directives/templates/converted/window.html').name
 ])
 
 

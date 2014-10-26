@@ -1,5 +1,7 @@
 'use strict';
 
+var fs = require('fs');
+
 module.exports = /*@ngInject*/
   function progressBar () {
     return {
@@ -11,7 +13,7 @@ module.exports = /*@ngInject*/
           value: '=',
           type: '@'
       },
-      templateUrl: 'progressbar.html',
+      template: fs.readFileSync(__dirname + '/templates/progressbar.html', 'utf8'),
       link: function(scope, element, attrs, progressCtrl) {
           progressCtrl.addBar(scope, angular.element(element.children()[0]));
       }

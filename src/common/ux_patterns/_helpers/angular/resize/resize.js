@@ -17,7 +17,7 @@ module.exports = angular.module('sm.resize',[
                 'w': window.innerWidth
             };
         }, function (newValue, oldValue) {
-            console.log(newValue, oldValue);
+            // console.log(newValue, oldValue);
             scope.windowHeight = newValue.h;
             scope.windowWidth = newValue.w;
 

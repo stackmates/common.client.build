@@ -1,5 +1,7 @@
 'use strict';
 
+var fs = require('fs');
+
 module.exports = /*@ngInject*/
   function carousel () {
     return {
@@ -8,7 +10,7 @@ module.exports = /*@ngInject*/
       replace: true,
       controller: 'CarouselController',
       require: 'carousel',
-      templateUrl: 'carousel.html',
+      template: fs.readFileSync(__dirname + '/templates/carousel.html', 'utf8'),
       scope: {
         interval: '=',
         noTransition: '=',

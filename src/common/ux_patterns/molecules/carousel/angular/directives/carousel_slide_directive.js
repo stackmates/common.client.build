@@ -1,5 +1,6 @@
 'use strict';
 
+var fs = require('fs');
 
 module.exports = /*@ngInject*/
   function slide () {
@@ -8,7 +9,7 @@ module.exports = /*@ngInject*/
       restrict: 'EA',
       transclude: true,
       replace: true,
-      templateUrl: 'slide.html',
+      template: fs.readFileSync(__dirname + '/templates/slide.html', 'utf8'),
       scope: {
         active: '=?'
       },

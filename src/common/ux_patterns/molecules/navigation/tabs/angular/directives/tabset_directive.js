@@ -1,5 +1,7 @@
 'use strict';
 
+var fs = require('fs');
+
 module.exports = /*@ngInject*/
   function tabset () {
     return {
@@ -10,7 +12,8 @@ module.exports = /*@ngInject*/
         type: '@'
       },
       controller: 'TabsetController',
-      templateUrl: 'tabset.html',
+      // templateUrl: 'tabset.html',
+      template: fs.readFileSync(__dirname + '/templates/tabset.html', 'utf8'),
       link: function(scope, element, attrs) {
         scope.vertical = angular.isDefined(attrs.vertical) ? scope.$parent.$eval(attrs.vertical) : false;
         scope.justified = angular.isDefined(attrs.justified) ? scope.$parent.$eval(attrs.justified) : false;

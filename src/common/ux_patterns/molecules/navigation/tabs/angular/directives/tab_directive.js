@@ -1,12 +1,15 @@
 'use strict';
 
+var fs = require('fs');
+
 module.exports = /*@ngInject*/
   function tab ($parse) {
     return {
       require: '^tabset',
       restrict: 'EA',
       replace: true,
-      templateUrl: 'tab.html',
+      template: fs.readFileSync(__dirname + '/templates/tab.html', 'utf8'),
+      // templateUrl: 'tab.html',
       transclude: true,
       scope: {
         active: '=?',

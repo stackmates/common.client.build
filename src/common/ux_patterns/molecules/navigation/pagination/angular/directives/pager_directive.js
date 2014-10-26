@@ -1,5 +1,6 @@
 'use strict';
 
+var fs = require('fs');
 
 module.exports = /*@ngInject*/
   function pager (pagerConfig) {
@@ -12,7 +13,7 @@ module.exports = /*@ngInject*/
       },
       require: ['pager', '?ngModel'],
       controller: 'PaginationController',
-      templateUrl: 'pager.html',
+      template: fs.readFileSync(__dirname + '/templates/pager.html', 'utf8'),
       replace: true,
       link: function(scope, element, attrs, ctrls) {
         var paginationCtrl = ctrls[0], ngModelCtrl = ctrls[1];

@@ -1,5 +1,7 @@
 'use strict';
 
+var fs = require('fs');
+
 module.exports = /*@ngInject*/
   function timepicker () {
     return {
@@ -8,7 +10,8 @@ module.exports = /*@ngInject*/
       controller:'TimepickerController',
       replace: true,
       scope: {},
-      templateUrl: 'timepicker.html',
+      // templateUrl: 'timepicker.html',
+      template: fs.readFileSync(__dirname + '/templates/timepicker.html', 'utf8'),
       link: function(scope, element, attrs, ctrls) {
         var timepickerCtrl = ctrls[0], ngModelCtrl = ctrls[1];
 

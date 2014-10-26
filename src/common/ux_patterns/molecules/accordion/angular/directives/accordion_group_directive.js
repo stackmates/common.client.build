@@ -2,6 +2,7 @@
 
 // The accordion-group directive indicates a block of html that will
 // expand and collapse in an accordion
+var fs = require('fs');
 
 var _o;
 
@@ -11,8 +12,8 @@ module.exports = /*@ngInject*/
       require:'^accordion',         // We need this directive to be inside an accordion
       restrict:'EA',
       transclude:true,              // It transcludes the contents of the directive into the template
-      replace: true,                // The element containing the directive will be replaced with the template
-      templateUrl:'accordion-group.html',
+      replace: true,               // template needs to be utf8 to be true
+      template: fs.readFileSync(__dirname + '/templates/accordion-group.html', 'utf8'),
       scope: {
         heading: '@',               // Interpolate the heading attribute onto this scope
         isOpen: '=?',
