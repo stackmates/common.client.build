@@ -1,6 +1,5 @@
 "use strict";
 
-
 /**
  * Add querySelectorAll() to jqLite.
  *
@@ -16,7 +15,11 @@ if (angular.element.prototype.querySelectorAll === undefined) {
   };
 }
 
-module.exports = angular.module('ui.select', [])
+module.exports = angular.module('ui.select', [
+
+
+])
+
 
 .constant('uiSelectConfig', {
   theme: 'bootstrap',
