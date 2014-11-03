@@ -134,6 +134,7 @@
     "gulp-replace": "^0.4.0",
     "gulp-rework": "^1.0.0",
     "gulp-rimraf": "^0.1.0",
+    "gulp-rsync": "0.0.4",
     "gulp-ruby-sass": "^0.7.0",
     "gulp-sass": "^0.7.1",
     "gulp-size": "^1.1.0",
