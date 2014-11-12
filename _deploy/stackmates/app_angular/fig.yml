@@ -1,0 +1,6 @@
+app:
+  build: .
+  ports:
+    - "8010:80"
+  volumes:
+    - ./www:/var/www/stackmates

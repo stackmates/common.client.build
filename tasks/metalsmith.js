@@ -1,15 +1,14 @@
 'use strict';
 
-var fs = require('fs');
-var _ = require('lodash');
-var jf = require('jsonfile')
+var fs   = require('fs');
+var _    = require('lodash');
+var jf   = require('jsonfile')
 
 var gulp = require('gulp');
 
 // builder files config
 var cfg            = require('../config/gulp');
 var jsonOutputFile = cfg.uri[cfg.siteBuild].dataOut + '/' + cfg.uri[cfg.siteBuild].baseURL + '.json';
-
 var Handlebars = require('handlebars');
 require(cfg.uri[cfg.siteBuild].handlebarsHelpers)(cfg, Handlebars);
 

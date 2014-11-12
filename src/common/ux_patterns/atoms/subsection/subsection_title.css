@@ -1,0 +1,26 @@
+/**
+*
+* subsection__title
+*
+* vars
+* $colorGrayDark
+* lineHeight
+* @include type--base
+*
+*
+**/
+
+.Subsection {
+
+}
+
+.Subsection_title {
+  color: $colorGrayDark;
+  margin-top: $lineHeight * 2;
+}
+
+.Subsection_number {
+  /*@include type--base;*/
+  padding-top: 0;
+  display: block;
+}

@@ -51,6 +51,7 @@ if (cfg.type === 'test') {
   require('./tasks/karma')(cfg);               // test javascript
 }
 
+require('./tasks/rsync');
 
 //  NOTE there is some weird bug with run sequence when occasionally it fails to run
 gulp.task('build', ['clean'], function(cb) {

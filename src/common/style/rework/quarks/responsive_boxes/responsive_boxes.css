@@ -1,0 +1,17 @@
+.u-responsiveBox--16-9 {
+    display: inline-block;
+    position: relative;
+}
+/*// 16:9 ratio*/
+.u-responsiveBox--16-9:after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+.u-responsiveBox_content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
