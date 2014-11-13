@@ -9,6 +9,7 @@ ghpages/
 undefined/
 _sandbox/
 _sandbox
+src/common/style
 
 
 config/gulp.js

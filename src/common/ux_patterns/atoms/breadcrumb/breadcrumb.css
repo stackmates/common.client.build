@@ -6,26 +6,20 @@
 
 .breadcrumbs {
   display: none;
-  @include medium {
-    display: block;
-  }
-
   position: relative;
   z-index: 1;
 }
 
 .breadcrumbs p {
-  @include type--small;
-  padding-top: $lineHeight;
+  padding-top: var(--lineHeight);
 }
 
 .breadcrumbs__link {
-  @include type--small;
+  // @include type--small; // .u-textSmall
   color: black;
   font-weight: 400;
   padding-top: 0;
-
-  @include medium {
-    padding-top: 0;
-  }
+  // @include medium {
+  //   padding-top: 0;
+  // }
 }

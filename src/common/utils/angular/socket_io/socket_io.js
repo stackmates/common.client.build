@@ -2,7 +2,6 @@
 
 var io = require('socket.io-client');
 
-
 module.exports = angular.module('sm.socket.io', [
 ])
 

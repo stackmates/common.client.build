@@ -1,5 +1,8 @@
 'use strict';
 
+
+
+
 var gulp                          = require('gulp');
 var gif                           = require('gulp-if');
 var rename                        = require('gulp-rename');
@@ -10,10 +13,8 @@ var csso                          = require('gulp-csso');
 
 // keep an eye on the follow for advancements in rework
 // myth.io
-// topcoat.io https://github.com/topcoat
 // moox: https://www.npmjs.org/~moox
-// https://www.npmjs.org/search?q=rework
-// https://github.com/reworkcss/rework
+// https://github.com/reworkcss/rework/wiki/Plugins-and-Utilities
 
 // the daddy
 var rework                        = require('gulp-rework');
